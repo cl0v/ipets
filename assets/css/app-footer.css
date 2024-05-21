@@ -1,0 +1,10 @@
+footer{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    /* float: none; */
+    /* display: flex; */
+    /* overflow: hidden; */
+    /* flex-grow: 1; */
+    /* border: 1px solid black; */
+}
