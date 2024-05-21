@@ -20,8 +20,3 @@
 </section>
 </template>
 
-
-
-<style>
-@import url("~/assets/css/gallery.css");
-</style>

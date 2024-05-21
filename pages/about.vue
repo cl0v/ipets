@@ -92,5 +92,4 @@
 
 <style>
 @import url("~/assets/css/about.css");
-/* @import url("~/assets/css/base.css"); */
 </style>
