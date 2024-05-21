@@ -84,9 +84,6 @@
         </div>
     </section>
 
-    <section class="btn-about">
-        <a href="/contact"><button class="btn">Entre em contato</button></a>
-    </section>
   </template>
   
 
