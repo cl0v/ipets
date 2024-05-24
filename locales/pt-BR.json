@@ -2,10 +2,11 @@
   "global": {
     "currency": "R$",
     "currencyCode": "BRL"
-
   },
   "details": {
-    "kennel_reviews": "Avaliações do Canil"
+    "kennel": {
+      "reviews": "Avaliações do Canil"
+    }
   },
   "messages": {
     "general": {
