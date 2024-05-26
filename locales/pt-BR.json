@@ -6,6 +6,17 @@
   "details": {
     "kennel": {
       "reviews": "Avaliações do Canil"
+    },
+    "color": "Cor do Pelo",
+    "variation": "Variação de tamanho",
+    "gender": "Escolha o gênero",
+    "layout": {
+      "details": "Detalhes",
+      "specs": "Especificações",
+      "description": "Descrição",
+      "info": "Informações do filhote",
+      "reviews": "Avaliações",
+      "stars": "de 5 estrelas"
     }
   },
   "messages": {
