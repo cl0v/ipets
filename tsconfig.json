@@ -5,8 +5,7 @@
       "./types"
     ],
     "types": [
-      // "@nuxt/types",
-      // "@nuxtjs/axios"
+      "@nuxt/types"
     ]
   }
   // {

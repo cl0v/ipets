@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-white">
+  <pre v-if="error">{{ error }}</pre>
+  <div v-else class="bg-white">
     <div class="pt-6">
       <nav aria-label="Breadcrumb">
         <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -110,12 +111,12 @@
               <RadioGroup v-model="selectedGender" class="mt-4">
                 <RadioGroupLabel class="sr-only">Choose a size</RadioGroupLabel>
                 <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
-                  <RadioGroupOption as="template" v-for="size in pet.gender" :key="size.name" :value="size"
-                    :disabled="!size.inStock" v-slot="{ active, checked }">
+                  <RadioGroupOption as="template" v-for="gender in genders" :key="gender.name" :value="gender"
+                    :disabled="!gender.inStock" v-slot="{ active, checked }">
                     <div
-                      :class="[size.inStock ? 'cursor-pointer bg-white text-gray-900 shadow-sm' : 'cursor-not-allowed bg-gray-50 text-gray-200', active ? 'ring-2 ring-indigo-500' : '', 'group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6']">
-                      <RadioGroupLabel as="span">{{ size.name }}</RadioGroupLabel>
-                      <span v-if="size.inStock"
+                      :class="[gender.inStock ? 'cursor-pointer bg-white text-gray-900 shadow-sm' : 'cursor-not-allowed bg-gray-50 text-gray-200', active ? 'ring-2 ring-indigo-500' : '', 'group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6']">
+                      <RadioGroupLabel as="span">{{ gender.name }}</RadioGroupLabel>
+                      <span v-if="gender.inStock"
                         :class="[active ? 'border' : 'border-2', checked ? 'border-indigo-500' : 'border-transparent', 'pointer-events-none absolute -inset-px rounded-md']"
                         aria-hidden="true" />
                       <span v-else aria-hidden="true"
@@ -150,9 +151,15 @@
             <h3 class="text-sm font-medium text-gray-900">{{ $t('details.layout.details') }}</h3>
 
             <div class="mt-4">
-              <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
-                <li v-for="highlight in pet.highlights" :key="highlight" class="text-gray-400">
-                  <span class="text-gray-600">{{ highlight }}</span>
+              <ul role="list" class="list-disc space-y-1 pl-4 text-sm">
+                <li class="text-gray-400">
+                  <span class="text-gray-600"> {{ $t('details.layout.pedigree') }} </span>
+                </li>
+                <li class="text-gray-400">
+                  <span class="text-gray-600">{{ $t('details.layout.microchip') }}</span>
+                </li>
+                <li class="text-gray-400">
+                  <span class="text-gray-600">{{ $t('details.layout.vaccinnes') }}</span>
                 </li>
               </ul>
             </div>
@@ -168,6 +175,7 @@
                 filhote, até completar o período de socialização.</p>
               <p class="text-xs text-gray-600">Após a confirmação, enviaremos todos os filhotes disponíveis para que
                 você escolha com base em suas preferências pessoais.</p>
+              <p class="text-xs text-gray-600">Alguns itens podem ser opcionais, como por exemplo o microchip.</p>
             </div>
           </div>
         </div>
@@ -178,23 +186,43 @@
 
 <script setup lang="ts">
 
-const { breed } = useRoute().params
-
-let { data } = await useFetch('/api/details', {
-  query: { breed: breed }
-})
-
-const pet = data.value!
 
 import { ref } from 'vue'
 import { StarIcon } from '@heroicons/vue/20/solid'
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
 
+
+const { breed } = useRoute().params
+
+let { data, error } = await useFetch('/api/details', {
+  query: { breed: breed }
+})
+
+// if (error.value.) {
+//   throw createError({
+//     statusCode: error.value.statusCode,
+//     statusMessage: error.value.message
+//   })
+// }
+
+const pet = data.value!
+
 const reviews = { href: '#', average: 4, totalCount: 117 }
+
+const genders = [{
+  "name": "Macho",
+  "inStock": true,
+  "query": "male"
+},
+{
+  "name": "Fêmea",
+  "inStock": true,
+  "query": "female"
+}]
 
 const selectedSize = ref(pet.sizes[0])
 const selectedColor = ref(pet.colors[0])
-const selectedGender = ref(pet.gender[1])
+const selectedGender = ref(genders[1])
 </script>
 
 <style>

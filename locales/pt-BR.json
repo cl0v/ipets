@@ -16,7 +16,11 @@
       "description": "Descrição",
       "info": "Informações do filhote",
       "reviews": "Avaliações",
-      "stars": "de 5 estrelas"
+      "stars": "de 5 estrelas",
+      "pedigree": "Certificação Pedigree CBKC e outras",
+      "microchip": "Microchipado",
+      "vaccinnes": "Vacinado e Vermifugado corretamente"
+
     }
   },
   "messages": {
