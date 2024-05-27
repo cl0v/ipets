@@ -18,7 +18,7 @@
                         <ULink to="/terms" class="hover:underline me-4 md:me-6">{{ $t('messages.footer.terms') }}</ULink>
                     </li>
                     <li>
-                        <ULink to="/contact" class="hover:underline">{{ $t('messages.footer.contact') }}</ULink>
+                        <a href="https://api.whatsapp.com/send?phone=5533997312898&text=Preciso de Ajuda!" class="hover:underline">{{ $t('messages.footer.contact') }}</a>
                     </li>
                 </ul>
             </div>

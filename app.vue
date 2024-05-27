@@ -1,3 +1,12 @@
+<script setup lang="ts">
+useSeoMeta({ogImage: 'https://ipets.dreampuppy.com.br/logo.png'})
+useHead({
+  titleTemplate: (titleChunk) => {
+    return `iPets - ${titleChunk}`;
+  },
+  title: 'Filhotes disponíveis',
+})
+</script>
 <template>
   <div>
     <NuxtLayout>
@@ -11,13 +20,3 @@ body {
   margin: 0 !important;
 }
 </style>
-
-
-<script setup lang="ts">
-useHead({
-  titleTemplate: (titleChunk) => {
-    return `iPets - ${titleChunk}`;
-  },
-  title: 'Filhotes disponíveis',
-})
-</script>

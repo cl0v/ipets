@@ -1,7 +1,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true }, // Desativar em produção
   // css: ['~/assets/css/base.css'],
-  modules: ['@nuxt/ui', "@nuxtjs/i18n"],
+  modules: ['@nuxt/ui', "@nuxtjs/i18n", "@nuxt/content",],
+  content: {
+    // ... options
+  },
   colorMode: {
     preference: 'light'
   },
@@ -10,7 +13,7 @@ export default defineNuxtConfig({
       title: 'iPets - Filhotes disponíveis',
       charset: 'utf-8',
       meta: [
-        { name: 'description', content: 'Compre seu filhote de forma segura.' }
+        { name: 'description', content: 'Compre seu filhote de forma segura.'}
       ],
       viewport: 'width=device-width, initial-scale=1',
       link: [
@@ -24,7 +27,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: [
-      { code: 'pt_BR', file: 'pt-BR.json'},
+      { code: 'pt_BR', file: 'pt-BR.json' },
     ],
     langDir: 'locales',
     defaultLocale: 'pt_BR',
