@@ -161,8 +161,13 @@
           <div class="mt-10">
             <h2 class="text-sm font-medium text-gray-900">{{ $t('details.layout.specs') }}</h2>
 
-            <div class="mt-4 space-y-6">
-              <p class="text-xs text-gray-600">{{ pet.details }}</p>
+            <div class="mt-4 space-y-1">
+              <p class="text-xs text-gray-600">As imagens são ilustrativas e você terá mais opções de escolha após a
+                confirmação do pagamento.</p>
+              <p class="text-xs text-gray-600">Periodicamente enviaremos as fotos do periodo de crescimento de seu
+                filhote, até completar o período de socialização.</p>
+              <p class="text-xs text-gray-600">Após a confirmação, enviaremos todos os filhotes disponíveis para que
+                você escolha com base em suas preferências pessoais.</p>
             </div>
           </div>
         </div>
@@ -187,15 +192,9 @@ import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
 
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
-const selectedColor = ref(pet.colors[0])
-// let selectedGender =
-//   useState('selectedGender', () => ref(pet.gender[0]))
 const selectedSize = ref(pet.sizes[0])
-
-
+const selectedColor = ref(pet.colors[0])
 const selectedGender = ref(pet.gender[1])
-
-
 </script>
 
 <style>

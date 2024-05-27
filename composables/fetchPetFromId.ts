@@ -1,6 +1,6 @@
 export default function (id: string) {
-  
-  if(id.length < 6) throw 'Id inválido';
+
+  if (id.length < 6) throw 'Id inválido';
 
 
   const product = {
@@ -28,6 +28,9 @@ export default function (id: string) {
         src: '/temp/2.heic',
         alt: 'Quarta imagem do filhote.',
       },
+    ], gender: [
+      { name: 'Macho', inStock: true },
+      { name: 'Fêmea', inStock: true },
     ],
     colors: [
       { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
@@ -60,5 +63,5 @@ export default function (id: string) {
   return {
     product,
     reviews,
-  }   
+  }
 }

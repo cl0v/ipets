@@ -38,9 +38,7 @@ export default defineEventHandler((event) => {
             'Pedigree CBKC',
             'Microchipado',
             'Vermifugado e Vacinado corretamente',
-        ],
-        details:
-            'As imagens são ilustrativas e você terá mais opções de escolha após a confirmação do pagamento.\nApós a confirmação, enviaremos todos os filhotes disponíveis para que você escolha com base em suas preferências pessoais.\nPeriodicamente enviaremos as fotos do periodo de crescimento de seu filhote, até completar o período de socialização.',
+        ]
     }
 
     return product
