@@ -147,4 +147,4 @@ A iPets empreenderá todos os esforços para atender tais solicitações no meno
 
 Esta Política será regida, interpretada e executada de acordo com as Leis da República Federativa do Brasil, especialmente a Lei nº 13.709/2018, independentemente das Leis de outros estados ou Países, sendo competente o foro de domicílio do Usuário para dirimir qualquer dúvida decorrente deste documento.
 
-Atualizado em 03/04/2023
+Atualizado em 28/04/2022

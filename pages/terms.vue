@@ -1,5 +1,5 @@
 <template>
     <div>
-        <p>Ainda não há nada pra ver aqui</p>
+        <div class="m-32"><ContentDoc path="/terms" /></div>
     </div>
 </template>
