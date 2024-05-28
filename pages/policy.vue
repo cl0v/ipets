@@ -12,6 +12,6 @@ useSeoMeta({
 
 <template>
     <NuxtLayout name="documents">
-        <ContentDoc path="/documents/policies" />
+        <ContentDoc path="/documents/como-protegemos-seus-dados" />
     </NuxtLayout>
 </template>
