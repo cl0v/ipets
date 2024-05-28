@@ -1,4 +1,6 @@
-﻿**POLÍTICA DE PRIVACIDADE DO SITE E POLÍTICA GERAL DE PROTEÇÃO DE DADOS – DREAMPUPPY IPETS**
+﻿<!-- Saiba como mantemos seus dados seguros na iPets. -->
+
+**POLÍTICA DE PRIVACIDADE DO SITE E POLÍTICA GERAL DE PROTEÇÃO DE DADOS – DREAMPUPPY IPETS**
 
 ` `iPets, entendemos como sensível e relevante os registros eletrônicos e dados pessoais deixados por você (“Usuário”) na utilização dos diversos sites e serviços (“Páginas”) da plataforma iPets, servindo a presente Política de Privacidade e Proteção de Dados (“Política”) para regular, de forma simples, transparente e objetiva, como são tratados os dados de navegação coletados.
 
