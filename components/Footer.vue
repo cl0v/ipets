@@ -12,7 +12,7 @@
                         <ULink to="/about" class="hover:underline me-4 md:me-6">{{ $t('messages.footer.about') }}</ULink>
                     </li>
                     <li>
-                        <ULink to="/policy" class="hover:underline me-4 md:me-6">{{ $t('messages.footer.policy') }}</ULink>
+                        <ULink to="/privacidade" class="hover:underline me-4 md:me-6">{{ $t('messages.footer.policy') }}</ULink>
                     </li>
                     <li>
                         <ULink to="/terms" class="hover:underline me-4 md:me-6">{{ $t('messages.footer.terms') }}</ULink>

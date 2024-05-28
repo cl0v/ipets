@@ -51,18 +51,18 @@
             <img src="/about-img/5.png" class="about-img">
         </div>
 
-        <div class="about-item">
+        <!-- <div class="about-item">
             <div class="about-text">
                 <h2>5</h2>
                 <p>Todos os filhotes comprados através da plataforma
                     ganham um pingente restreador.</p>
             </div>
             <img src="/about-img/6.png" class="about-img">
-        </div>
+        </div> -->
 
         <div class="about-item">
             <div class="about-text">
-                <h2>6</h2>
+                <h2>5</h2>
                 <p>Quando seu filhote chegar, vocês poderão curtir juntos,
                     mas lembre-se de acessar o nosso app para verificar os cuidados
                     com o seu doguinho.</p>

@@ -1,0 +1,30 @@
+[
+    {
+        "uuid": "golden_retriever",
+        "color": "gold1",
+        "size": "default",
+        "price": 3500,
+        "images": []
+    },
+    {
+        "uuid": "golden_retriever",
+        "color": "gold2",
+        "size": "default",
+        "price": 3200,
+        "images": []
+    },
+    {
+        "uuid": "golden_retriever",
+        "color": "gold3",
+        "size": "default",
+        "price": 3700,
+        "images": []
+    },
+    {
+        "uuid": "golden_retriever",
+        "color": "cream",
+        "size": "default",
+        "price": 2800,
+        "images": []
+    }
+]

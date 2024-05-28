@@ -1,44 +1,373 @@
 [
     {
-        "uuid": "rottweiler",
-        "name": "Rottweiler",
+        "name": "Akita Inu",
+        "uuid": "akita_inu",
         "price": 1500,
-        "imageSrc": "https://i.pinimg.com/564x/e7/fe/68/e7fe68fb70ed6f48d9c6d83dd742e276.jpg",
-        "imageAlt": "filhote Rottweiler puppy"
+        "imageUrl": "images/dogs/akita.webp",
+        "imageAlt": "Um fofo filhote de Akita Inu."
     },
     {
-        "uuid": "shih-tzu",
-        "name": "Shih-tzu",
-        "price": 3500,
-        "imageSrc": "https://petfisio.com.br/wp-content/uploads/2022/11/Shih-Tzu.jpg",
-        "imageAlt": "Olive drab green insulated bottle with flared screw lid and flat top."
+        "name": "Australian Cattle Dog",
+        "uuid": "australian_cattle_dog",
+        "price": 800,
+        "imageUrl": "images/dogs/australian_cattle_dog.webp",
+        "imageAlt": "Um animado Australian Cattle Dog."
     },
     {
-        "uuid": "lulu_da_pomerania",
+        "name": "Beagle",
+        "uuid": "beagle",
+        "price": 500,
+        "imageUrl": "images/dogs/beagle.png",
+        "imageAlt": "Um brincalhão Beagle."
+    },
+    {
+        "name": "Basset Hound",
+        "uuid": "basset_hound",
+        "price": 700,
+        "imageUrl": "images/dogs/basset_hound.webp",
+        "imageAlt": "Um adorável Basset Hound."
+    },
+    {
+        "name": "Bernese Mountain Dog",
+        "uuid": "bernese_mountain_dog",
+        "price": 1200,
+        "imageUrl": "images/dogs/bernese_mountain_dog.jpg",
+        "imageAlt": "Um fofinho Bernese Mountain Dog."
+    },
+    {
+        "name": "Bichon Frisé",
+        "uuid": "bichon_frise",
+        "price": 600,
+        "imageUrl": "images/dogs/bichon_frise.webp",
+        "imageAlt": "Um alegre Bichon Frisé."
+    },
+    {
+        "name": "Bloodhound",
+        "uuid": "bloodhound",
+        "price": 1000,
+        "imageUrl": "images/dogs/bloodhound.avif",
+        "imageAlt": "Um curioso Bloodhound."
+    },
+    {
+        "name": "Border Collie",
+        "uuid": "border_collie",
+        "price": 700,
+        "imageUrl": "images/dogs/border_collie.webp",
+        "imageAlt": "Um inteligente Border Collie."
+    },
+    {
+        "name": "Boxer",
+        "uuid": "boxer",
+        "price": 800,
+        "imageUrl": "images/dogs/boxer.jpg",
+        "imageAlt": "Um brincalhão Boxer."
+    },
+    {
+        "name": "Braco Alemão",
+        "uuid": "braco_alemao",
+        "price": 900,
+        "imageUrl": "",
+        "imageAlt": "Um enérgico Braco Alemão."
+    },
+    {
+        "name": "Bulldog Francês",
+        "uuid": "bulldog_frances",
+        "price": 2000,
+        "imageUrl": "",
+        "imageAlt": "Um charmoso Bulldog Francês."
+    },
+    {
+        "name": "Bulldog Inglês",
+        "uuid": "bulldog_ingles",
+        "price": 1800,
+        "imageUrl": "",
+        "imageAlt": "Um adorável Bulldog Inglês."
+    },
+    {
+        "name": "Bull Terrier",
+        "uuid": "bull_terrier",
+        "price": 1000,
+        "imageUrl": "",
+        "imageAlt": "Um divertido Bull Terrier."
+    },
+    {
+        "name": "Cão da Serra da Estrela",
+        "uuid": "cao_da_serra_da_estrela",
+        "price": 1300,
+        "imageUrl": "",
+        "imageAlt": "Um robusto Cão da Serra da Estrela."
+    },
+    {
+        "name": "Cão de Fila Brasileiro",
+        "uuid": "cao_de_fila_brasileiro",
+        "price": 1500,
+        "imageUrl": "",
+        "imageAlt": "Um imponente Cão de Fila Brasileiro."
+    },
+    {
+        "name": "Cão de Montanha dos Pirenéus",
+        "uuid": "cao_de_montanha_dos_pireneus",
+        "price": 1400,
+        "imageUrl": "",
+        "imageAlt": "Um majestoso Cão de Montanha dos Pirenéus."
+    },
+    {
+        "name": "Chihuahua",
+        "uuid": "chihuahua",
+        "price": 600,
+        "imageUrl": "",
+        "imageAlt": "Um pequeno Chihuahua."
+    },
+    {
+        "name": "Cocker Spaniel Americano",
+        "uuid": "cocker_spaniel_americano",
+        "price": 700,
+        "imageUrl": "",
+        "imageAlt": "Um gracioso Cocker Spaniel Americano."
+    },
+    {
+        "name": "Cocker Spaniel Inglês",
+        "uuid": "cocker_spaniel_ingles",
+        "price": 800,
+        "imageUrl": "",
+        "imageAlt": "Um elegante Cocker Spaniel Inglês."
+    },
+    {
+        "name": "Collie",
+        "uuid": "collie",
+        "price": 1000,
+        "imageUrl": "",
+        "imageAlt": "Um fiel Collie."
+    },
+    {
+        "name": "Dachshund Miniatura",
+        "uuid": "dachshund_miniatura",
+        "price": 650,
+        "imageUrl": "",
+        "imageAlt": "Um pequeno Dachshund Miniatura."
+    },
+    {
+        "name": "Dálmata",
+        "uuid": "dalmata",
+        "price": 1100,
+        "imageUrl": "https://img.olx.com.br/images/52/525219592033489.jpg",
+        "imageAlt": "Um elegante Dálmata."
+    },
+    {
+        "name": "Dobermann",
+        "uuid": "dobermann",
+        "price": 1600,
+        "imageUrl": "",
+        "imageAlt": "Um poderoso Dobermann."
+    },
+    {
+        "name": "Dogue Alemão",
+        "uuid": "dogue_alemao",
+        "price": 1800,
+        "imageUrl": "",
+        "imageAlt": "Um majestoso Dogue Alemão."
+    },
+    {
+        "name": "Golden Retriever",
+        "uuid": "golden_retriever",
+        "price": 1500,
+        "imageUrl": "/images/dogs/3.heic",
+        "imageAlt": "Um amigável Golden Retriever."
+    },
+    {
+        "name": "Husky Siberiano",
+        "uuid": "husky_siberiano",
+        "price": 1200,
+        "imageUrl": "",
+        "imageAlt": "Um aventureiro Husky Siberiano."
+    },
+    {
+        "name": "Komondor",
+        "uuid": "komondor",
+        "price": 1100,
+        "imageUrl": "",
+        "imageAlt": "Um distinto Komondor."
+    },
+    {
+        "name": "Kuvasz",
+        "uuid": "kuvasz",
+        "price": 1300,
+        "imageUrl": "",
+        "imageAlt": "Um protetor Kuvasz."
+    },
+    {
+        "name": "Labrador Retriever",
+        "uuid": "labrador_retriever",
+        "price": 1400,
+        "imageUrl": "",
+        "imageAlt": "Um alegre Labrador Retriever."
+    },
+    {
+        "name": "Leonberger",
+        "uuid": "leonberger",
+        "price": 1700,
+        "imageUrl": "",
+        "imageAlt": "Um imponente Leonberger."
+    },
+    {
         "name": "Lulu da Pomerânia",
+        "uuid": "lulu_da_pomerania",
         "price": 4500,
         "imageSrc": "https://http2.mlstatic.com/D_NQ_NP_911513-MLB73727477443_122023-O.webp",
-        "imageAlt": "Person using a pen to cross a task off a productivity paper card."
+        "imageAlt": "Lulu da Pomerânia."
     },
     {
-        "uuid": "dalmata",
-        "name": "Dalmata",
-        "price": 2800,
-        "imageSrc": "https://img.olx.com.br/images/52/525219592033489.jpg",
-        "imageAlt": "Hand holding black machined steel mechanical pencil with brass tip and top."
+        "name": "Maltês",
+        "uuid": "maltes",
+        "price": 800,
+        "imageUrl": "",
+        "imageAlt": "Um fofo Maltês."
     },
     {
-        "uuid": "pug",
+        "name": "Mastiff Inglês",
+        "uuid": "mastiff_ingles",
+        "price": 2000,
+        "imageUrl": "",
+        "imageAlt": "Um nobre Mastiff Inglês."
+    },
+    {
+        "name": "Mastim Napolitano",
+        "uuid": "mastim_napolitano",
+        "price": 1900,
+        "imageUrl": "",
+        "imageAlt": "Um majestoso Mastim Napolitano."
+    },
+    {
+        "name": "Papillon",
+        "uuid": "papillon",
+        "price": 700,
+        "imageUrl": "",
+        "imageAlt": "Um gracioso Papillon."
+    },
+    {
+        "name": "Pastor de Shetland",
+        "uuid": "pastor_de_shetland",
+        "price": 900,
+        "imageUrl": "",
+        "imageAlt": "Um inteligente Pastor de Shetland."
+    },
+    {
+        "name": "Pastor Alemão",
+        "uuid": "pastor_alemao",
+        "price": 1300,
+        "imageUrl": "",
+        "imageAlt": "Um leal Pastor Alemão."
+    },
+    {
+        "name": "Pastor Australiano",
+        "uuid": "pastor_australiano",
+        "price": 1000,
+        "imageUrl": "",
+        "imageAlt": "Um ágil Pastor Australiano."
+    },
+    {
+        "name": "Pastor Belga Malinois",
+        "uuid": "pastor_belga_malinois",
+        "price": 1200,
+        "imageUrl": "",
+        "imageAlt": "Um corajoso Pastor Belga Malinois."
+    },
+    {
+        "name": "Pointer Inglês",
+        "uuid": "pointer_ingles",
+        "price": 1100,
+        "imageUrl": "",
+        "imageAlt": "Um atento Pointer Inglês."
+    },
+    {
+        "name": "Poodle Toy",
+        "uuid": "poodle_toy",
+        "price": 600,
+        "imageUrl": "",
+        "imageAlt": "Um adorável Poodle Toy."
+    },
+    {
         "name": "Pug",
-        "price": 3200,
-        "imageSrc": "https://clinica.encrenquinhas.com.br/imagens/pug-femea-filhote.jpg",
-        "imageAlt": "Filhote Pug Puppy "
+        "uuid": "pug",
+        "price": 800,
+        "imageUrl": "https://clinica.encrenquinhas.com.br/imagens/pug-femea-filhote.jpg",
+        "imageAlt": "Um engraçado Pug."
     },
     {
-        "uuid": "golden_retriever",
-        "name": "Golden Retriever",
-        "price": 3200,
-        "imageSrc": "/temp/3.heic",
-        "imageAlt": "Person using a pen to cross a task off a productivity paper card."
+        "name": "Rottweiler",
+        "uuid": "rottweiler",
+        "price": 1400,
+        "imageUrl": "https://i.pinimg.com/564x/e7/fe/68/e7fe68fb70ed6f48d9c6d83dd742e276.jpg",
+        "imageAlt": "Um forte Rottweiler."
+    },
+    {
+        "name": "Saint Bernard",
+        "uuid": "saint_bernard",
+        "price": 1700,
+        "imageUrl": "",
+        "imageAlt": "Um amigável Saint Bernard."
+    },
+    {
+        "name": "Setter Irlandês",
+        "uuid": "setter_irlandes",
+        "price": 1000,
+        "imageUrl": "",
+        "imageAlt": "Um elegante Setter Irlandês."
+    },
+    {
+        "name": "Shar Pei",
+        "uuid": "shar_pei",
+        "price": 900,
+        "imageUrl": "",
+        "imageAlt": "Um distinto Shar Pei."
+    },
+    {
+        "name": "Shih Tzu",
+        "uuid": "shih_tzu",
+        "price": 800,
+        "imageUrl": "https://petfisio.com.br/wp-content/uploads/2022/11/Shih-Tzu.jpg",
+        "imageAlt": "Um adorável Shih Tzu."
+    },
+    {
+        "name": "Schnauzer Miniatura",
+        "uuid": "schnauzer_miniatura",
+        "price": 1200,
+        "imageUrl": "",
+        "imageAlt": "Um elegante Schnauzer Miniatura."
+    },
+    {
+        "name": "Springer Spaniel Inglês",
+        "uuid": "springer_spaniel_ingles",
+        "price": 1000,
+        "imageUrl": "",
+        "imageAlt": "Um alegre Springer Spaniel Inglês."
+    },
+    {
+        "name": "Tosa Inu",
+        "uuid": "tosa_inu",
+        "price": 1800,
+        "imageUrl": "",
+        "imageAlt": "Um imponente Tosa Inu."
+    },
+    {
+        "name": "Vizsla Húngaro",
+        "uuid": "vizsla_hungaro",
+        "price": 1100,
+        "imageUrl": "",
+        "imageAlt": "Um elegante Vizsla Húngaro."
+    },
+    {
+        "name": "Weimaraner",
+        "uuid": "weimaraner",
+        "price": 1300,
+        "imageUrl": "",
+        "imageAlt": "Um gracioso Weimaraner."
+    },
+    {
+        "name": "Yorkshire Terrier",
+        "uuid": "yorkshire_terrier",
+        "price": 900,
+        "imageUrl": "",
+        "imageAlt": "Um pequeno Yorkshire Terrier."
     }
 ]
