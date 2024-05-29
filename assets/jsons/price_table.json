@@ -4,7 +4,12 @@
         "color": "gold1",
         "size": "default",
         "price": 3500,
-        "images": []
+        "images": [
+            "/images/dogs/golden_retriever/gold1_0.heic",
+            "/images/dogs/golden_retriever/gold1_1.heic",
+            "/images/dogs/golden_retriever/gold1_2.heic",
+            "/images/dogs/golden_retriever/gold1_3.heic"
+        ]
     },
     {
         "uuid": "golden_retriever",

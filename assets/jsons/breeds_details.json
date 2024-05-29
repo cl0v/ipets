@@ -53,7 +53,62 @@
                 "query": "default"
             }
         ],
-        
         "description": "Nada melhor do que um Filhote de Golden Retriever para alegrar os seus dias. Essa raça é conhecida por seu carisma imenso e a quantidade de energia para brincadeiras. Além de ser uma ótima opção para quem tem crianças em casa."
+    },
+    {
+        "uuid": "pug",
+        "name": "Filhote de Pug",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Pug",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4,
+            "totalCount": 117
+        },
+        "colors": [
+            {
+                "name": "Abricó",
+                "class": "bg-yellow-300",
+                "selectedClass": "bg-zinc-100",
+                "query": "apricot"
+            },
+            {
+                "name": "Fulvo",
+                "class": "bg-yellow-200",
+                "selectedClass": "bg-zinc-100",
+                "query": "fawn"
+            },
+            {
+                "name": "Preto",
+                "class": "bg-black",
+                "selectedClass": "bg-zinc-100",
+                "query": "black"
+            },
+            {
+                "name": "Prata",
+                "class": "bg-gray-400",
+                "selectedClass": "bg-zinc-100",
+                "query": "silver"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Único",
+                "inStock": false,
+                "query": "default"
+            }
+        ],
+        "description": "Os Pugs são adoráveis e encantadores, com uma personalidade alegre e uma expressão facial única. Essa raça é conhecida por seu comportamento carinhoso e adaptável, sendo uma ótima companhia para a família."
     }
 ]
