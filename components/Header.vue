@@ -7,13 +7,13 @@
           <span class="self-center text-2xl font-semibold whitespace-nowrap">iPets</span>
         </ULink>
       </div>
-      <div class="flex lg:hidden">
+      <!-- <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           @click="mobileMenuOpen = true">
           <span class="sr-only">Abrir menu principal</span>
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
-      </div>
+      </div> -->
       <PopoverGroup class="hidden lg:flex lg:gap-x-3">
         <!-- <Popover class="relative">
           <PopoverButton class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -68,7 +68,7 @@
           <span aria-hidden="true">&rarr;</span></ULink>
       </div> -->
     </nav>
-    <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
+    <!-- <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 z-10" />
       <DialogPanel
         class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -113,7 +113,7 @@
           </div>
         </div>
       </DialogPanel>
-    </Dialog>
+    </Dialog> -->
   </header>
 </template>
 

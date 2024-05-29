@@ -1,5 +1,19 @@
 [
     {
+        "name": "Vizsla Húngaro",
+        "uuid": "vizsla_hungaro",
+        "price": 1100,
+        "imageUrl": "",
+        "imageAlt": "Um elegante Vizsla Húngaro."
+    },
+    {
+        "name": "Tosa Inu",
+        "uuid": "tosa_inu",
+        "price": 1800,
+        "imageUrl": "",
+        "imageAlt": "Um imponente Tosa Inu."
+    },
+    {
         "name": "Mastiff Inglês",
         "uuid": "mastiff_ingles",
         "price": 2000,

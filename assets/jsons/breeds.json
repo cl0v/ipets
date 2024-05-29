@@ -200,126 +200,113 @@
         "name": "Pastor de Shetland",
         "uuid": "pastor_de_shetland",
         "price": 900,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/pastor_de_shetland.webp",
         "imageAlt": "Um inteligente Pastor de Shetland."
     },
     {
         "name": "Pastor Alemão",
         "uuid": "pastor_alemao",
         "price": 1300,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/pastor_alemao.png",
         "imageAlt": "Um leal Pastor Alemão."
     },
     {
         "name": "Pastor Australiano",
         "uuid": "pastor_australiano",
         "price": 1000,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/pastor_australiano.avif",
         "imageAlt": "Um ágil Pastor Australiano."
     },
     {
         "name": "Pastor Belga Malinois",
         "uuid": "pastor_belga_malinois",
         "price": 1200,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/pastor_belga_malinois.jpg",
         "imageAlt": "Um corajoso Pastor Belga Malinois."
     },
     {
         "name": "Pointer Inglês",
         "uuid": "pointer_ingles",
         "price": 1100,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/pointer_ingles.webp",
         "imageAlt": "Um atento Pointer Inglês."
     },
     {
-        "name": "Poodle Toy",
-        "uuid": "poodle_toy",
+        "name": "Poodle",
+        "uuid": "poodle",
         "price": 600,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/poodle.png",
         "imageAlt": "Um adorável Poodle Toy."
     },
     {
         "name": "Pug",
         "uuid": "pug",
         "price": 800,
-        "imageUrl": "https://clinica.encrenquinhas.com.br/imagens/pug-femea-filhote.jpg",
+        "imageUrl": "/images/dogs/pug.jpg",
         "imageAlt": "Um engraçado Pug."
     },
     {
         "name": "Rottweiler",
         "uuid": "rottweiler",
         "price": 1400,
-        "imageUrl": "https://i.pinimg.com/564x/e7/fe/68/e7fe68fb70ed6f48d9c6d83dd742e276.jpg",
+        "imageUrl": "/images/dogs/rottweiler.jpg",
         "imageAlt": "Um forte Rottweiler."
     },
     {
         "name": "Saint Bernard",
         "uuid": "saint_bernard",
         "price": 1700,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/saint_bernard.jpg",
         "imageAlt": "Um amigável Saint Bernard."
     },
     {
         "name": "Setter Irlandês",
         "uuid": "setter_irlandes",
         "price": 1000,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/setter_irlandes.avif",
         "imageAlt": "Um elegante Setter Irlandês."
     },
     {
         "name": "Shar Pei",
         "uuid": "shar_pei",
         "price": 900,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/shar_pei.jpg",
         "imageAlt": "Um distinto Shar Pei."
     },
     {
         "name": "Shih Tzu",
         "uuid": "shih_tzu",
         "price": 800,
-        "imageUrl": "https://petfisio.com.br/wp-content/uploads/2022/11/Shih-Tzu.jpg",
+        "imageUrl": "/images/dogs/shih_tzu.jpg",
         "imageAlt": "Um adorável Shih Tzu."
     },
     {
-        "name": "Schnauzer Miniatura",
-        "uuid": "schnauzer_miniatura",
+        "name": "Schnauzer",
+        "uuid": "schnauzer",
         "price": 1200,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/schnauzer.jpg",
         "imageAlt": "Um elegante Schnauzer Miniatura."
     },
     {
         "name": "Springer Spaniel Inglês",
         "uuid": "springer_spaniel_ingles",
         "price": 1000,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/springer_spaniel_ingles.jpg",
         "imageAlt": "Um alegre Springer Spaniel Inglês."
     },
-    {
-        "name": "Tosa Inu",
-        "uuid": "tosa_inu",
-        "price": 1800,
-        "imageUrl": "",
-        "imageAlt": "Um imponente Tosa Inu."
-    },
-    {
-        "name": "Vizsla Húngaro",
-        "uuid": "vizsla_hungaro",
-        "price": 1100,
-        "imageUrl": "",
-        "imageAlt": "Um elegante Vizsla Húngaro."
-    },
+    
     {
         "name": "Weimaraner",
         "uuid": "weimaraner",
         "price": 1300,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/weimaraner.jpg",
         "imageAlt": "Um gracioso Weimaraner."
     },
     {
         "name": "Yorkshire Terrier",
         "uuid": "yorkshire_terrier",
         "price": 900,
-        "imageUrl": "",
+        "imageUrl": "/images/dogs/yorkshire_terrier.jpg",
         "imageAlt": "Um pequeno Yorkshire Terrier."
     }
 ]
