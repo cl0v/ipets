@@ -20,7 +20,7 @@
           </li>
         </ol>
       </nav>
-      <PetImages />
+      <PetImages :pet-images="images" />
       <!-- Product info -->
       <div
         class="mx-auto max-w-2xl px-4 pb-4 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-4 lg:pt-16">
@@ -193,8 +193,9 @@ import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
 
 
 const { breed } = useRoute().params
+const { size, gender, color } = useRoute().query
 
-let { data, error } = await useFetch('/api/details', {
+let { data: details, error } = await useFetch('/api/details', {
   query: { breed: breed }
 })
 
@@ -205,7 +206,7 @@ let { data, error } = await useFetch('/api/details', {
 //   })
 // }
 
-const pet = data.value!
+const pet = details.value!
 
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
@@ -219,6 +220,21 @@ const genders = [{
   "inStock": true,
   "query": "female"
 }]
+
+
+
+const { data: priceImage } = await useFetch('/api/details/price-image', {
+  query: {
+    breed: breed,
+    size: size,
+    gender: gender,
+    color: color,
+  }
+});
+
+const { images, price } = priceImage.value
+
+
 
 const selectedSize = ref(pet.sizes[0])
 const selectedColor = ref(pet.colors[0])
