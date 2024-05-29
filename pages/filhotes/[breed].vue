@@ -1,4 +1,5 @@
 <template>
+  <Head><Title>{{ pet.name }}</Title></Head>
   <pre v-if="error">{{ error }}</pre>
   <div v-else class="bg-white">
     <div class="pt-6">
@@ -15,7 +16,7 @@
             </div>
           </li>
           <li class="text-sm">
-            <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">{{
+            <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">Filhote de {{
               pet.name }} </a>
           </li>
         </ol>
@@ -31,7 +32,7 @@
         <!-- Options -->
         <div class="mt-4 lg:row-span-3 lg:mt-0">
           <h2 class="sr-only">{{ $t('details.layout.info') }}</h2>
-          <PetPrice />
+          <PetPrice :pet-price="price"/>
 
 
           <!-- Reviews -->

@@ -1,7 +1,7 @@
 [
     {
         "uuid": "golden_retriever",
-        "name": "Filhote de Golden Retriever",
+        "name": "Golden Retriever",
         "href": "#",
         "breadcrumbs": [
             {
@@ -57,7 +57,7 @@
     },
     {
         "uuid": "pug",
-        "name": "Filhote de Pug",
+        "name": "Pug",
         "href": "#",
         "breadcrumbs": [
             {
