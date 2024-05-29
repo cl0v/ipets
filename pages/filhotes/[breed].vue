@@ -222,7 +222,7 @@ const genders = [{
 
 const selectedSize = ref(pet.sizes[0])
 const selectedColor = ref(pet.colors[0])
-const selectedGender = ref(genders[1])
+const selectedGender = ref(genders[0])
 </script>
 
 <style>

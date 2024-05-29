@@ -1,5 +1,5 @@
 <template>
     <NuxtLayout name="documents">
-        <ContentDoc path="/documents/terms" />
+        <ContentDoc path="/documents/termos-de-uso" />
     </NuxtLayout>
 </template>

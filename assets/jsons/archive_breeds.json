@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Mastiff Inglês",
+        "uuid": "mastiff_ingles",
+        "price": 2000,
+        "imageUrl": "/images/dogs/maltes.webp",
+        "imageAlt": "Um nobre Mastiff Inglês."
+    },
+    {
+        "name": "Kuvasz",
+        "uuid": "kuvasz",
+        "price": 1300,
+        "imageUrl": "",
+        "imageAlt": "Um protetor Kuvasz."
+    },
+    {
+        "name": "Komondor",
+        "uuid": "komondor",
+        "price": 1100,
+        "imageUrl": "",
+        "imageAlt": "Um distinto Komondor."
+    },
+    {
+        "name": "Collie",
+        "uuid": "collie",
+        "price": 1000,
+        "imageUrl": "",
+        "imageAlt": "Um fiel Collie."
+    },
+    {
+        "name": "Cão de Montanha dos Pirenéus",
+        "uuid": "cao_de_montanha_dos_pireneus",
+        "price": 1400,
+        "imageUrl": "",
+        "imageAlt": "Um majestoso Cão de Montanha dos Pirenéus."
+    },
+    {
+        "name": "Cão da Serra da Estrela",
+        "uuid": "cao_da_serra_da_estrela",
+        "price": 1300,
+        "imageUrl": "images/dogs/bull_terrier.jpg",
+        "imageAlt": "Um robusto Cão da Serra da Estrela."
+    }
+]
