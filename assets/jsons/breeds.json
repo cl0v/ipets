@@ -1,6 +1,7 @@
 [
     {
         "name": "Akita Inu",
+        "uuid": "akita_inu",
         "price": 3000,
         "imageUrl": "images/dogs/akita.webp",
         "imageAlt": "Um fofo filhote de Akita Inu."
