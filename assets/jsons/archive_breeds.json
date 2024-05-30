@@ -97,13 +97,7 @@
         "imageUrl": "images/dogs/cocker_spaniel_ingles.webp",
         "imageAlt": "Um elegante Cocker Spaniel Inglês."
     },
-    {
-        "name": "Dachshund (Salsicha)",
-        "uuid": "dachshund",
-        "price": 6500,
-        "imageUrl": "images/dogs/dachshund.jpg",
-        "imageAlt": "Um pequeno Dachshund Miniatura."
-    },
+   
     {
         "name": "Dálmata",
         "uuid": "dalmata",

@@ -1,7 +1,6 @@
 [
     {
         "name": "Akita Inu",
-        "uuid": "akita_inu",
         "price": 3000,
         "imageUrl": "images/dogs/akita.webp",
         "imageAlt": "Um fofo filhote de Akita Inu."
@@ -33,6 +32,13 @@
         "price": 12000,
         "imageUrl": "images/dogs/bernese_mountain_dog.jpg",
         "imageAlt": "Um fofinho Bernese Mountain Dog."
+    },
+    {
+        "name": "Dachshund (Salsicha)",
+        "uuid": "dachshund",
+        "price": 6500,
+        "imageUrl": "images/dogs/dachshund.jpg",
+        "imageAlt": "Um pequeno Dachshund Miniatura."
     },
     {
         "name": "Golden Retriever",
@@ -83,7 +89,6 @@
         "imageUrl": "/images/dogs/pastor_australiano.avif",
         "imageAlt": "Um ágil Pastor Australiano."
     },
-   
     {
         "name": "Pug",
         "uuid": "pug",
@@ -105,7 +110,6 @@
         "imageUrl": "/images/dogs/saint_bernard.jpg",
         "imageAlt": "Um amigável Saint Bernard."
     },
-    
     {
         "name": "Shih Tzu",
         "uuid": "shih_tzu",
@@ -113,7 +117,6 @@
         "imageUrl": "/images/dogs/shih_tzu.jpg",
         "imageAlt": "Um adorável Shih Tzu."
     },
-   
     {
         "name": "Yorkshire Terrier",
         "uuid": "yorkshire_terrier",
