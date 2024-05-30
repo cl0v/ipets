@@ -1,5 +1,8 @@
 <template>
-  <Head><Title>{{ pet.name }}</Title></Head>
+
+  <Head>
+    <Title>{{ pet.name }}</Title>
+  </Head>
   <pre v-if="error">{{ error }}</pre>
   <div v-else class="bg-white">
     <div class="pt-6">
@@ -32,7 +35,7 @@
         <!-- Options -->
         <div class="mt-4 lg:row-span-3 lg:mt-0">
           <h2 class="sr-only">{{ $t('details.layout.info') }}</h2>
-          <PetPrice :pet-price="price"/>
+          <PetPrice :pet-price="price" />
 
 
           <!-- Reviews -->
@@ -157,10 +160,13 @@
                   <span class="text-gray-600"> {{ $t('details.layout.pedigree') }} </span>
                 </li>
                 <li class="text-gray-400">
+                  <span class="text-gray-600">{{ $t('details.layout.vaccinnes') }}</span>
+                </li>
+                <li class="text-gray-400">
                   <span class="text-gray-600">{{ $t('details.layout.microchip') }}</span>
                 </li>
                 <li class="text-gray-400">
-                  <span class="text-gray-600">{{ $t('details.layout.vaccinnes') }}</span>
+                  <span class="text-gray-600">{{ $t('details.layout.ship') }}</span>
                 </li>
               </ul>
             </div>
