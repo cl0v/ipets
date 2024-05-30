@@ -110,5 +110,61 @@
             }
         ],
         "description": "Os Pugs são adoráveis e encantadores, com uma personalidade alegre e uma expressão facial única. Essa raça é conhecida por seu comportamento carinhoso e adaptável, sendo uma ótima companhia para a família."
+    },
+    {
+        "uuid": "akita_inu",
+        "name": "Akita Inu",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Akita Inu",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4,
+            "totalCount": 117
+        },
+        "colors": [
+            {
+                "name": "Vermelho",
+                "class": "bg-red-600",
+                "selectedClass": "bg-zinc-100",
+                "query": "red"
+            },
+            {
+                "name": "Branco",
+                "class": "bg-white",
+                "selectedClass": "bg-zinc-100",
+                "query": "white"
+            },
+            {
+                "name": "Sésamo",
+                "class": "bg-yellow-500",
+                "selectedClass": "bg-zinc-100",
+                "query": "sesame"
+            },
+            {
+                "name": "Tigrado",
+                "class": "bg-gray-700",
+                "selectedClass": "bg-zinc-100",
+                "query": "brindle"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Único",
+                "inStock": false,
+                "query": "default"
+            }
+        ],
+        "description": "Os Akita Inus são cães majestosos e leais, conhecidos por sua presença imponente e personalidade calma. Eles são ótimos companheiros para famílias e são conhecidos por sua coragem e proteção."
     }
 ]
