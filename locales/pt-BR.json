@@ -21,7 +21,13 @@
       "microchip": "Microchipado",
       "vaccinnes": "Vacinado e Vermifugado corretamente",
       "ship": "Frete gratuito para todo o Brasil"
-
+      
+    },
+    "specs": {
+      "images": "As imagens são ilustrativas e você terá mais opções de escolha após a confirmação do pagamento.",
+      "growth": "Periodicamente enviaremos as fotos do periodo de crescimento de seu filhote, até completar o período de socialização.",
+      "payment": "Após a confirmação, enviaremos todos os filhotes disponíveis para que você escolha com base em suas preferências pessoais.",
+      "optional": "Alguns itens podem ser opcionais, como por exemplo o microchip."
     }
   },
   "messages": {

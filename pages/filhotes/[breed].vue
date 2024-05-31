@@ -113,7 +113,7 @@
               </div>
 
               <RadioGroup v-model="selectedGender" class="mt-4">
-                <RadioGroupLabel class="sr-only">Choose a size</RadioGroupLabel>
+                <RadioGroupLabel class="sr-only">Escolha um gênero</RadioGroupLabel>
                 <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
                   <RadioGroupOption as="template" v-for="gender in genders" :key="gender.name" :value="gender"
                     :disabled="!gender.inStock" v-slot="{ active, checked }">
@@ -176,13 +176,10 @@
             <h2 class="text-sm font-medium text-gray-900">{{ $t('details.layout.specs') }}</h2>
 
             <div class="mt-4 space-y-1">
-              <p class="text-xs text-gray-600">As imagens são ilustrativas e você terá mais opções de escolha após a
-                confirmação do pagamento.</p>
-              <p class="text-xs text-gray-600">Periodicamente enviaremos as fotos do periodo de crescimento de seu
-                filhote, até completar o período de socialização.</p>
-              <p class="text-xs text-gray-600">Após a confirmação, enviaremos todos os filhotes disponíveis para que
-                você escolha com base em suas preferências pessoais.</p>
-              <p class="text-xs text-gray-600">Alguns itens podem ser opcionais, como por exemplo o microchip.</p>
+              <p class="text-xs text-gray-600">{{ $t('details.specs.images') }}</p>
+              <p class="text-xs text-gray-600">{{ $t('details.specs.growth') }}</p>
+              <p class="text-xs text-gray-600">{{ $t('details.specs.payment') }}</p>
+              <p class="text-xs text-gray-600">{{ $t('details.specs.optional') }}</p>
             </div>
           </div>
         </div>
@@ -197,6 +194,7 @@
 import { ref } from 'vue'
 import { StarIcon } from '@heroicons/vue/20/solid'
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
+
 
 
 const { breed } = useRoute().params
@@ -239,7 +237,6 @@ const { data: priceImage } = await useFetch('/api/details/price-image', {
   }
 });
 
-const { images, price } = priceImage.value
 const { images, price } = priceImage.value!
 
 
