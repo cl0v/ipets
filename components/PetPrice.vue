@@ -1,7 +1,8 @@
 <script setup lang="ts">
-const props = defineProps({
-    petPrice: { default: [] },
+defineProps({
+    petPrice: { type: Number as () => number, default: () => 0 },
 });
+
 </script>
 
 <template>
