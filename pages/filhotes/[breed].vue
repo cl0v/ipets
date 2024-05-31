@@ -240,6 +240,7 @@ const { data: priceImage } = await useFetch('/api/details/price-image', {
 });
 
 const { images, price } = priceImage.value
+const { images, price } = priceImage.value!
 
 
 
