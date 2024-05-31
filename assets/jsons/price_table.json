@@ -31,5 +31,65 @@
         "size": "default",
         "price": 2800,
         "images": []
+    },
+    {
+        "uuid": "pug",
+        "color": "apricot",
+        "size": "default",
+        "price": 2800,
+        "images": [
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg"
+        ]
+    },
+    {
+        "uuid": "pug",
+        "color": "fawn",
+        "size": "default",
+        "price": 2800,
+        "images": [
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg"
+        ]
+    },
+    {
+        "uuid": "pug",
+        "color": "black",
+        "size": "default",
+        "price": 2800,
+        "images": [
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg"
+        ]
+    },
+    {
+        "uuid": "pug",
+        "color": "silver",
+        "size": "default",
+        "price": 2800,
+        "images": [
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg"
+        ]
+    },
+    {
+        "uuid": "akita_inu",
+        "color": "red",
+        "size": "default",
+        "price": 2800,
+        "images": [
+            "/images/dogs/akita.webp",
+            "/images/dogs/akita.webp",
+            "/images/dogs/akita.webp",
+            "/images/dogs/akita.webp"
+        ]
     }
 ]
