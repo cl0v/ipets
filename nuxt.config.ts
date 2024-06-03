@@ -1,17 +1,23 @@
 export default defineNuxtConfig({
   devtools: { enabled: true }, // Desativar em produção
-  // css: ['~/assets/css/base.css'],
-  modules: ['@nuxt/ui', "@nuxtjs/i18n", // 'nuxt-stripe-module',
-  "@nuxt/content", "@nuxtjs/tailwindcss"],
-  content: {
-    // ... options
-  },
+  modules: [
+    "@nuxt/ui",
+    "@nuxtjs/i18n",
+    "@nuxt/content",
+    "@nuxtjs/tailwindcss",
+  ],
+  content: {},
   colorMode: {
     preference: 'light'
   },
-  // stripe: {
-  //   publishableKey: 'YOUR_STRIPE_PUBLISHABLE_KEY',
-  // },
+  runtimeConfig: {
+    mercadopagoWebhookSecret: process.env.NUXT_MERCADOPAGO_WEBHOOK_SECRET,
+    mercadopagoAccessToken: process.env.NUXT_MERCADOPAGO_ACCESS_TOKEN,
+    public: {
+      baseURL: 'https://ipets.dreampuppy.com.br',
+      mercadopagoKey: process.env.NUXT_PUBLIC_MERCADOPAGO_KEY,
+    },
+  },
   app: {
     head: {
       title: 'iPets - Filhotes disponíveis',
