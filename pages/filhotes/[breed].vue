@@ -61,7 +61,7 @@
               <RadioGroup v-model="selectedColor" class="mt-4">
                 <RadioGroupLabel class="sr-only">Choose a color</RadioGroupLabel>
                 <div class="flex items-center space-x-3">
-                  <RadioGroupOption as="template" v-for="color in pet.colors" :key="color.name" :value="color"
+                  <RadioGroupOption as="template" v-for="color in pet.colors" :key="color.query" :value="color"
                     v-slot="{ active, checked }">
                     <div
                       :class="[color.selectedClass, active && checked ? 'ring ring-offset-1' : '', !active && checked ? 'ring-2' : '', 'relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none']">
@@ -135,9 +135,10 @@
                 </div>
               </RadioGroup>
             </div>
-            <PayButton></PayButton>
-            <button type="submit"
-              class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Comprar</button>
+            <div
+              class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent px-8 py-3 text-base font-medium text-white  focus:outline-none focus:ring-2 focus:focus:ring-offset-2">
+              <PayButton />
+            </div>
           </form>
         </div>
 
@@ -189,13 +190,9 @@
 </template>
 
 <script setup lang="ts">
-
-
 import { ref } from 'vue'
 import { StarIcon } from '@heroicons/vue/20/solid'
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
-
-
 
 const { breed } = useRoute().params
 const { size, gender, color } = useRoute().query
@@ -203,13 +200,6 @@ const { size, gender, color } = useRoute().query
 let { data: details, error } = await useFetch('/api/details', {
   query: { breed: breed }
 })
-
-// if (error.value.) {
-//   throw createError({
-//     statusCode: error.value.statusCode,
-//     statusMessage: error.value.message
-//   })
-// }
 
 const pet = details.value!
 
@@ -226,8 +216,6 @@ const genders = [{
   "query": "female"
 }]
 
-
-
 const { data: priceImage } = await useFetch('/api/details/price-image', {
   query: {
     breed: breed,
@@ -238,8 +226,6 @@ const { data: priceImage } = await useFetch('/api/details/price-image', {
 });
 
 const { images, price } = priceImage.value!
-
-
 
 const selectedSize = ref(pet.sizes[0])
 const selectedColor = ref(pet.colors[0])

@@ -1,5 +1,47 @@
 [
     {
+        "name": "Saint Bernard",
+        "uuid": "saint_bernard",
+        "price": 17000,
+        "imageUrl": "/images/dogs/saint_bernard.jpg",
+        "imageAlt": "Um amigável Saint Bernard."
+    },
+    {
+        "name": "Mastim Napolitano",
+        "uuid": "mastim_napolitano",
+        "price": 19000,
+        "imageUrl": "/images/dogs/mastim_napolitano.avif",
+        "imageAlt": "Um majestoso Mastim Napolitano."
+    },
+    {
+        "name": "Pastor Australiano",
+        "uuid": "pastor_australiano",
+        "price": 10000,
+        "imageUrl": "/images/dogs/pastor_australiano.avif",
+        "imageAlt": "Um ágil Pastor Australiano."
+    },
+    {
+        "name": "Australian Cattle Dog",
+        "uuid": "australian_cattle_dog",
+        "price": 8000,
+        "imageUrl": "images/dogs/australian_cattle_dog.webp",
+        "imageAlt": "Um animado Australian Cattle Dog."
+    },
+    {
+        "name": "Basset Hound",
+        "uuid": "basset_hound",
+        "price": 7000,
+        "imageUrl": "images/dogs/basset_hound.webp",
+        "imageAlt": "Um adorável Basset Hound."
+    },
+    {
+        "name": "Beagle",
+        "uuid": "beagle",
+        "price": 5000,
+        "imageUrl": "images/dogs/beagle.png",
+        "imageAlt": "Um brincalhão Beagle."
+    },
+    {
         "name": "Bichon Frisé",
         "uuid": "bichon_frise",
         "price": 6000,
@@ -97,7 +139,6 @@
         "imageUrl": "images/dogs/cocker_spaniel_ingles.webp",
         "imageAlt": "Um elegante Cocker Spaniel Inglês."
     },
-   
     {
         "name": "Dálmata",
         "uuid": "dalmata",

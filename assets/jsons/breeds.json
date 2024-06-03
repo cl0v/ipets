@@ -7,27 +7,6 @@
         "imageAlt": "Um fofo filhote de Akita Inu."
     },
     {
-        "name": "Australian Cattle Dog",
-        "uuid": "australian_cattle_dog",
-        "price": 8000,
-        "imageUrl": "images/dogs/australian_cattle_dog.webp",
-        "imageAlt": "Um animado Australian Cattle Dog."
-    },
-    {
-        "name": "Beagle",
-        "uuid": "beagle",
-        "price": 5000,
-        "imageUrl": "images/dogs/beagle.png",
-        "imageAlt": "Um brincalhão Beagle."
-    },
-    {
-        "name": "Basset Hound",
-        "uuid": "basset_hound",
-        "price": 7000,
-        "imageUrl": "images/dogs/basset_hound.webp",
-        "imageAlt": "Um adorável Basset Hound."
-    },
-    {
         "name": "Bernese Mountain Dog",
         "uuid": "bernese_mountain_dog",
         "price": 12000,
@@ -77,20 +56,6 @@
         "imageAlt": "Um fofo Maltês."
     },
     {
-        "name": "Mastim Napolitano",
-        "uuid": "mastim_napolitano",
-        "price": 19000,
-        "imageUrl": "/images/dogs/mastim_napolitano.avif",
-        "imageAlt": "Um majestoso Mastim Napolitano."
-    },
-    {
-        "name": "Pastor Australiano",
-        "uuid": "pastor_australiano",
-        "price": 10000,
-        "imageUrl": "/images/dogs/pastor_australiano.avif",
-        "imageAlt": "Um ágil Pastor Australiano."
-    },
-    {
         "name": "Pug",
         "uuid": "pug",
         "price": 8000,
@@ -103,13 +68,6 @@
         "price": 1800,
         "imageUrl": "/images/dogs/rottweiler.jpg",
         "imageAlt": "Um forte Rottweiler."
-    },
-    {
-        "name": "Saint Bernard",
-        "uuid": "saint_bernard",
-        "price": 17000,
-        "imageUrl": "/images/dogs/saint_bernard.jpg",
-        "imageAlt": "Um amigável Saint Bernard."
     },
     {
         "name": "Shih Tzu",
