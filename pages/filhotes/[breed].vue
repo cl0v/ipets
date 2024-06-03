@@ -135,9 +135,6 @@
                 </div>
               </RadioGroup>
             </div>
-            <div
-              class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent px-8 py-3 text-base font-medium text-white  focus:outline-none focus:ring-2 focus:focus:ring-offset-2">
-              <PayButton />
             </div>
             <!-- <PayButton /> -->
             <a type="submit" href="https://api.whatsapp.com/send?phone=5533997312898&text=Fazer pedido!"
