@@ -139,6 +139,10 @@
               class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent px-8 py-3 text-base font-medium text-white  focus:outline-none focus:ring-2 focus:focus:ring-offset-2">
               <PayButton />
             </div>
+            <!-- <PayButton /> -->
+            <a type="submit" href="https://api.whatsapp.com/send?phone=5533997312898&text=Fazer pedido!"
+              style="color: white;"
+              class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Comprar</a>
           </form>
         </div>
 
