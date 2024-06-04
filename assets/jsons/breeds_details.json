@@ -163,11 +163,6 @@
                 "name": "Único",
                 "inStock": true,
                 "query": "default"
-            },
-            {
-                "name": "Único2",
-                "inStock": true,
-                "query": "default2"
             }
         ],
         "description": "Os Akita Inus são cães majestosos e leais, conhecidos por sua presença imponente e personalidade calma. Eles são ótimos companheiros para famílias e são conhecidos por sua coragem e proteção."

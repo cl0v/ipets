@@ -32,18 +32,15 @@ import {
   RadioGroupLabel,
   RadioGroupOption,
 } from '@headlessui/vue'
+import availableGenders from  "~/assets/jsons/genders.json"
 
 
-const availableGenders = [{
-  "name": "Macho",
-  "inStock": true,
-  "query": "male"
-},
-{
-  "name": "Fêmea",
-  "inStock": true,
-  "query": "female"
-}]
+// interface PetGenderType {
+//   name: string
+//   inStock: boolean
+//   query: string
+// }
+
 
 const { gender } = useRoute().query
 

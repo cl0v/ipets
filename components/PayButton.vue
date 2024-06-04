@@ -6,12 +6,16 @@ const pending = ref(false)
 const pay = async () => {
 	pending.value = true
 
+	const { breed } = useRoute().params
+	const { size, gender, color } = useRoute().query
+
 	const response = await $fetch<{ url: string }>('/api/create-order', {
 		method: 'POST',
 		body: {
-			product_name: 'Nuxt Course',
-			price: 50,
-			// payment_method: paymentMethod,
+			breed: breed,
+			size: size,
+			gender: gender,
+			color: color,
 		},
 	})
 
