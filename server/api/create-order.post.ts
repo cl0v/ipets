@@ -15,13 +15,7 @@ export default defineEventHandler(async event => {
 
 	const preference = new Preference(mercadopago)
 
-	// TODO: Receber os dados e o valor do filhote com base no body enviado plo user
-
 	const selectedBreed = details.find(breed => breed.uuid === body.breed)
-
-	console.log(body)
-
-
 	const selectedColor = selectedBreed?.colors.find(color => color.query === body.color) ?? selectedBreed?.colors[0]
 	const selectedSize = selectedBreed?.sizes.find(size => size.query === body.size) ?? selectedBreed?.sizes[0]
 	const seletedGender = availableGenders.find(gender => gender.query === body.gender) ?? availableGenders[0]

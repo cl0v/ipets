@@ -31,6 +31,6 @@ const pay = async () => {
 
 <template>
 	<UButton @click="pay" :loading="pending" block size="xl" icon="i-mdi-credit-card">
-		Comprar agora
+		Continuar para pagamento
 	</UButton>
 </template>
