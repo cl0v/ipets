@@ -10,6 +10,7 @@
     "color": "Cor do Pelo",
     "variation": "Variação de tamanho",
     "gender": "Escolha o gênero",
+    "size": "Escolha o tamanho",
     "layout": {
       "details": "Detalhes",
       "specs": "Especificações",

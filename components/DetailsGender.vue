@@ -3,7 +3,7 @@
     <RadioGroup v-model="selectedGender" class="mt-4" @update:modelValue="updateGender">
       <RadioGroupLabel class="sr-only">{{ $t('details.gender') }}</RadioGroupLabel>
       <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
-        <RadioGroupOption as="template" v-for="gender in genders" :key="gender.name" :value="gender"
+        <RadioGroupOption as="template" v-for="gender in availableGenders" :key="gender.name" :value="gender"
           :disabled="!gender.inStock" v-slot="{ active, checked }">
           <div
             :class="[gender.inStock ? 'cursor-pointer bg-white text-gray-900 shadow-sm' : 'cursor-not-allowed bg-gray-50 text-gray-200', active ? 'ring-2 ring-indigo-500' : '', 'group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6']">
@@ -34,7 +34,7 @@ import {
 } from '@headlessui/vue'
 
 
-const genders = [{
+const availableGenders = [{
   "name": "Macho",
   "inStock": true,
   "query": "male"
@@ -45,13 +45,15 @@ const genders = [{
   "query": "female"
 }]
 
-const selectedGender = ref(genders[0])
+const { gender } = useRoute().query
+
+const maybeGender = availableGenders.find((e) => e.query == gender)
+
+const selectedGender = ref(maybeGender ?? availableGenders[0])
 
 function updateGender(newGender) {
   selectedGender.value = newGender
-
-  const url = new URL(window.location.href);
-  useUpdateQueryStringParameter(window, url, 'gender', newGender.query);
+  updateQueryStringParameter('gender', newGender.query)
   useFetchPriceNImages()
 }
 </script>

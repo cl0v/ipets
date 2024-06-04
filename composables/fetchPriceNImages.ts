@@ -10,16 +10,14 @@ export const useFetchPriceNImages = async () => {
   const { size, gender, color } = route.query;
   const { breed } = route.params
 
-  const { data: priceAndImage} = await useFetch('/api/details/price-image', {
+  const { price, images } = await $fetch('/api/details/price-image', {
     query: {
-      breed: breed,
       size: size,
+      breed: breed,
+      color: color,
       gender: gender,
-      color: color
     }
   })
-
-  const {images, price } = priceAndImage.value!
 
   setPetImages(images)
   setPetPrice(price)
