@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
     let price = result!.price
 
     if(gender == 'female'){
-        price *= 1.15
+        price *= 1.20
     }
 
     return {

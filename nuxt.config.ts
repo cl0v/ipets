@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       "@nuxtjs/i18n",
       "@nuxt/content",
       "@nuxtjs/tailwindcss",
+      '@nuxt/image',
     ],
     content: {},
     colorMode: {
@@ -52,6 +53,7 @@ export default defineNuxtConfig({
       "@nuxtjs/i18n",
       "@nuxt/content",
       "@nuxtjs/tailwindcss",
+      '@nuxt/image',
     ],
     content: {},
     colorMode: {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps({
-    petPrice: { type: Number as () => number, default: () => 0 },
-});
+import usePetPrice from '~/composables/priceState';
+
+const { petPrice } = usePetPrice()
 
 </script>
 

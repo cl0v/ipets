@@ -86,7 +86,7 @@
             {
                 "name": "Fulvo",
                 "class": "bg-yellow-200",
-                "selectedClass": "bg-zinc-100",
+                "selectedClass": "",
                 "query": "fawn"
             },
             {
