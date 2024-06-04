@@ -1,5 +1,19 @@
 [
     {
+        "name": "Labrador",
+        "uuid": "labrador",
+        "price": 14000,
+        "imageUrl": "/images/dogs/labrador.jpg",
+        "imageAlt": "Um alegre Labrador Retriever."
+    },
+    {
+        "name": "Bernese Mountain Dog",
+        "uuid": "bernese_mountain_dog",
+        "price": 12000,
+        "imageUrl": "images/dogs/bernese_mountain_dog.jpg",
+        "imageAlt": "Um fofinho Bernese Mountain Dog."
+    },
+    {
         "name": "Saint Bernard",
         "uuid": "saint_bernard",
         "price": 17000,

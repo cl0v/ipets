@@ -7,13 +7,6 @@
         "imageAlt": "Um fofo filhote de Akita Inu."
     },
     {
-        "name": "Bernese Mountain Dog",
-        "uuid": "bernese_mountain_dog",
-        "price": 12000,
-        "imageUrl": "images/dogs/bernese_mountain_dog.jpg",
-        "imageAlt": "Um fofinho Bernese Mountain Dog."
-    },
-    {
         "name": "Dachshund (Salsicha)",
         "uuid": "dachshund",
         "price": 6500,
@@ -33,13 +26,6 @@
         "price": 12000,
         "imageUrl": "/images/dogs/husky_siberiano.jpg",
         "imageAlt": "Um aventureiro Husky Siberiano."
-    },
-    {
-        "name": "Labrador",
-        "uuid": "labrador",
-        "price": 14000,
-        "imageUrl": "/images/dogs/labrador.jpg",
-        "imageAlt": "Um alegre Labrador Retriever."
     },
     {
         "name": "Lulu da Pomerânia e Spitz Alemão",

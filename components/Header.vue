@@ -14,7 +14,7 @@
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div> -->
-      <PopoverGroup class="hidden lg:flex lg:gap-x-3">
+      <PopoverGroup class=" lg:flex lg:gap-x-3">
         <!-- <Popover class="relative">
           <PopoverButton class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
             Product
@@ -56,8 +56,17 @@
 
         <!-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a> -->
-        <UInput :placeholder="$t('messages.header.search')" />
-        <UButton icon="i-heroicons-magnifying-glass" size="sm" color="primary" square variant="solid" />
+        
+        <a href="https://api.whatsapp.com/send?phone=5533997312898&text=Preciso de Ajuda!" class="hover:underline">{{ $t('messages.header.contact') }}</a>
+        
+        <!-- TODO: Adicionar uma barra de pesquisa por raca -->
+        <!-- 
+        
+          <UInput :placeholder="$t('messages.header.search')" />
+          <UButton icon="i-heroicons-magnifying-glass" size="sm" color="primary" square variant="solid" />
+        
+        -->
+
         <!-- <ULink href="/contact" class="text-sm font-semibold leading-6 text-gray-900">{{ $t('messages.header.contact') }}
         </ULink>
         <ULink href="/about" class="text-sm font-semibold leading-6 text-gray-900">{{ $t('messages.header.about') }}
