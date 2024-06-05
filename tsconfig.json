@@ -1,9 +1,23 @@
 {
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "lib": ["DOM"],
-    "typeRoots": [
-      "./types"
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
     ],
-  }
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "types": [
+      "@nuxt/types",
+      "@types/node",
+      "@nuxtjs/sentry"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }

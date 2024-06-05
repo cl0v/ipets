@@ -3,7 +3,7 @@
     <div class="w-1/2">
       <form class="max-w-md mx-auto" @submit.prevent="submitForm">
         <div class="mb-4">
-          <label for="name" class="block text-gray-700 font-bold mb-2">Nome *</label>
+          <label for="name" class="block text-gray-700 font-bold mb-2">Nome completo *</label>
           <input type="text" id="name" v-model="name"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
@@ -26,7 +26,7 @@
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
         </div>
         <div class="mb-4">
-          <label for="street" class="block text-gray-700 font-bold mb-2">Endereço *</label>
+          <label for="street" class="block text-gray-700 font-bold mb-2">Endereço completo*</label>
           <input type="text" id="street" v-model="address"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
@@ -100,22 +100,6 @@ const details = decodeToken<IntentType>(intent!.toString())
 const submitForm = async () => {
   pending.value = true
 
-
-  //TODO: Adicionar um endpoint para criar usuário no firebase
-  const userId = await $fetch<{ url: string }>('/api/create-user', {
-    method: 'POST',
-    body: {
-      name: name.value,
-      cpf: cpf.value,
-      phone: phone.value,
-      whatsapp: whatsapp.value,
-      address: address.value,
-      city: city.value,
-      cep: cep.value,
-    },
-  })
-
-
   const response = await $fetch<{ url: string }>('/api/create-order', {
     method: 'POST',
     body: {
@@ -123,9 +107,13 @@ const submitForm = async () => {
       size: details.qSize,
       gender: details.qGender,
       color: details.qColor,
-      cpf: cpf,
-      userId: userId,
-      userName: name,
+      name: name.value,
+      cpf: cpf.value,
+      phone: phone.value,
+      whatsapp: whatsapp.value,
+      address: address.value,
+      city: city.value,
+      cep: cep.value,
     },
   })
 

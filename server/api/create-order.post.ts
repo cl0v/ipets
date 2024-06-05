@@ -3,16 +3,23 @@ import { mercadopago } from '../utils/mercadopago'
 import { femalePriceMultiplier } from '../utils/constants'
 
 import details from '~/assets/jsons/breeds_details.json'
-
 import availableGenders from "~/assets/jsons/genders.json"
-
 import priceTable from "~/assets/jsons/price_table.json"
 
 
 export default defineEventHandler(async event => {
+	try {
+
+	}catch {
+	}
 	const runtimeConfig = useRuntimeConfig()
 	const body = await readBody(event)
 
+	const isDev = process.dev
+
+	const userDoc = await firestore.collection(isDev ? 'devUsers' : 'users').add(body)
+
+	const userId = userDoc.id
 
 	const preference = new Preference(mercadopago)
 
@@ -45,19 +52,17 @@ export default defineEventHandler(async event => {
 				},
 			],
 			metadata: {
-				uuid: body.userId
+				uuid: userId
 			},
-			payer: {
-				name: body.userName,
-				identification: {
-					type: "CPF",
-					number: body.cpf
-				},
-			},
+			// payer: {
+			// 	name: body.name,
+			// 	identification: {
+			// 		type: "CPF",
+			// 		number: body.cpf
+			// 	},
+			// },
 		},
 	})
-
-	const isDev = process.dev
 
 	if (isDev) {
 		return { url: response.sandbox_init_point } //TODO: substituir pelo de producao
