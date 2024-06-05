@@ -1,10 +1,46 @@
-[{
-    "name": "Akita Inu",
-    "uuid": "akita_inu",
-    "price": 3000,
-    "imageUrl": "images/dogs/akita.webp",
-    "imageAlt": "Um fofo filhote de Akita Inu."
-},
+[
+    {
+        "name": "Husky Siberiano",
+        "uuid": "husky_siberiano",
+        "price": 12000,
+        "imageUrl": "/images/dogs/husky_siberiano.jpg",
+        "imageAlt": "Um aventureiro Husky Siberiano."
+    },
+    {
+        "name": "Yorkshire Terrier",
+        "uuid": "yorkshire_terrier",
+        "price": 2800,
+        "imageUrl": "/images/dogs/yorkshire_terrier.webp",
+        "imageAlt": "Um pequeno Yorkshire Terrier."
+    },
+    {
+        "name": "Pug",
+        "uuid": "pug",
+        "price": 8000,
+        "imageUrl": "/images/dogs/pug.jpg",
+        "imageAlt": "Um engraçado Pug."
+    },
+    {
+        "name": "Lulu da Pomerânia e Spitz Alemão",
+        "uuid": "spitz_alemao",
+        "price": 45000,
+        "imageUrl": "/images/dogs/spitz_alemao.webp",
+        "imageAlt": "Lulu da Pomerânia."
+    },
+    {
+        "name": "Dachshund (Salsicha)",
+        "uuid": "dachshund",
+        "price": 6500,
+        "imageUrl": "images/dogs/dachshund.jpg",
+        "imageAlt": "Um pequeno Dachshund Miniatura."
+    },
+    {
+        "name": "Akita Inu",
+        "uuid": "akita_inu",
+        "price": 3000,
+        "imageUrl": "images/dogs/akita.webp",
+        "imageAlt": "Um fofo filhote de Akita Inu."
+    },
     {
         "name": "Labrador",
         "uuid": "labrador",

@@ -1,10 +1,11 @@
 <template>
+
     <Head>
-      <Title> Como Funciona </Title>
+        <Title> Como Funciona </Title>
     </Head>
     <section class="header-card" style="background-image: url('/about-img/1.png');">
         <h1>Trabalhamos apenas com filhotes.</h1>
-        <h2>Para garantir uma adaptação plena e amarosa 
+        <h2>Para garantir uma adaptação plena e amarosa
             para os cães em seus novos lares.</h2>
     </section>
 
@@ -18,7 +19,7 @@
             <div class="about-text">
                 <h2>1</h2>
                 <p>Você seleciona a raça dos seus sonhos <br> e preenche
-                o formulário de contato.</p>
+                    o formulário de contato.</p>
             </div>
             <img src="/about-img/2.png" class="about-img">
         </div>
@@ -26,9 +27,9 @@
         <div class="about-item">
             <div class="about-text">
                 <h2>2</h2>
-                <p>Nós retornamos, recolhemos informações e enviamos
-                    um orçamento após localizar o melhor canil para sua solicitação <br>
-                    e condições desejadas.</p>
+                <p>Nós recolhemos informações e te enviamos todos os filhotes disponíveis baseado em seu pedido e
+                    condições desejadas.</p>
+
             </div>
             <img src="/about-img/3.png" class="about-img">
         </div>
@@ -46,7 +47,7 @@
             <div class="about-text">
                 <h2>4</h2>
                 <p>Em alguns dias, o canil enviará o seu cãozinho através do <br>
-                    transporte especializado em animais para sua capital.</p>
+                    transporte especializado em animais para sua casa.</p>
             </div>
             <img src="/about-img/5.png" class="about-img">
         </div>
@@ -84,8 +85,8 @@
         </div>
     </section>
 
-  </template>
-  
+</template>
+
 
 <style>
 @import url("~/assets/css/about.css");

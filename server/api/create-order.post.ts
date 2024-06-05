@@ -43,6 +43,12 @@ export default defineEventHandler(async event => {
 					unit_price: price ?? 5000, // O preço depende do filhote no json, consultar com base no uuid
 				},
 			],
+			payer: {
+				"identification": {
+				  "type": "CPF",
+				  "number": "19119119100"
+				},
+			  },
 		},
 	})
 

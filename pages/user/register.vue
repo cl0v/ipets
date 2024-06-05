@@ -4,36 +4,42 @@
       <form class="max-w-md mx-auto" @submit.prevent="submitForm">
         <div class="mb-4">
           <label for="name" class="block text-gray-700 font-bold mb-2">Nome *</label>
-          <input type="text" id="name"
+          <input type="text" id="name" v-model="name"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required>
+        </div>
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">CPF *</label>
+          <input type="text" id="name" v-model="cpf"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
         <div class="mb-4">
           <label for="phone" class="block text-gray-700 font-bold mb-2">Telefone *</label>
-          <input type="tel" id="phone"
+          <input type="tel" id="phone" v-model="phone"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
         <div class="mb-4">
           <label for="whatsapp" class="block text-gray-700 font-bold mb-2">WhatsApp</label>
-          <input type="tel" id="whatsapp"
+          <input type="tel" id="whatsapp" v-model="whatsapp"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
         </div>
         <div class="mb-4">
           <label for="street" class="block text-gray-700 font-bold mb-2">Endereço *</label>
-          <input type="text" id="street"
+          <input type="text" id="street" v-model="address"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
         <div class="mb-4">
           <label for="number" class="block text-gray-700 font-bold mb-2">Cidade *</label>
-          <input type="text" id="number"
+          <input type="text" id="number" v-model="city"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
         <div class="mb-4">
           <label for="cep" class="block text-gray-700 font-bold mb-2">CEP *</label>
-          <input type="text" id="cep"
+          <input type="text" id="cep" v-model="cep"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
@@ -77,18 +83,13 @@
 
 const pending = ref(false)
 
-interface IntentType {
-  breed: string
-  qBreed: string
-  color: string
-  qColor: string
-  gender: string
-  qGender: string
-  size: string
-  qSize: string
-  price: number
-
-}
+const name = defineModel('name')
+const cpf = defineModel('cpf')
+const phone = defineModel('phone')
+const whatsapp = defineModel('whatsapp')
+const address = defineModel('address')
+const city = defineModel('city')
+const cep = defineModel('cep')
 
 const { intent } = useRoute().query
 
@@ -97,7 +98,20 @@ const details = decodeToken<IntentType>(intent!.toString())
 const submitForm = async () => {
   pending.value = true
 
+
   //TODO: Adicionar um endpoint para criar usuário no firebase
+  const response = await $fetch<{ url: string }>('/api/create-user', {
+    method: 'POST',
+    body: {
+      name: name.value,
+      cpf: cpf.value,
+      phone: phone.value,
+      whatsapp: whatsapp.value,
+      address: address.value,
+      city: city.value,
+      cep: cep.value,
+    },
+  })
 
   /*
   const response = await $fetch<{ url: string }>('/api/create-order', {
@@ -107,6 +121,7 @@ const submitForm = async () => {
       size: details.qSize,
       gender: details.qGender,
       color: details.qColor,
+      cpf: cpf
     },
   })
 

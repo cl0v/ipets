@@ -1,33 +1,13 @@
 [
     
     {
-        "name": "Dachshund (Salsicha)",
-        "uuid": "dachshund",
-        "price": 6500,
-        "imageUrl": "images/dogs/dachshund.jpg",
-        "imageAlt": "Um pequeno Dachshund Miniatura."
-    },
-    {
         "name": "Golden Retriever",
         "uuid": "golden_retriever",
         "price": 4500,
         "imageUrl": "/images/dogs/golden_retriever.heic",
         "imageAlt": "Um amigável Golden Retriever."
     },
-    {
-        "name": "Husky Siberiano",
-        "uuid": "husky_siberiano",
-        "price": 12000,
-        "imageUrl": "/images/dogs/husky_siberiano.jpg",
-        "imageAlt": "Um aventureiro Husky Siberiano."
-    },
-    {
-        "name": "Lulu da Pomerânia e Spitz Alemão",
-        "uuid": "spitz_alemao",
-        "price": 45000,
-        "imageUrl": "/images/dogs/spitz_alemao.webp",
-        "imageAlt": "Lulu da Pomerânia."
-    },
+    
     {
         "name": "Maltês",
         "uuid": "maltes",
@@ -35,13 +15,7 @@
         "imageUrl": "/images/dogs/maltes.webp",
         "imageAlt": "Um fofo Maltês."
     },
-    {
-        "name": "Pug",
-        "uuid": "pug",
-        "price": 8000,
-        "imageUrl": "/images/dogs/pug.jpg",
-        "imageAlt": "Um engraçado Pug."
-    },
+    
     {
         "name": "Rottweiler",
         "uuid": "rottweiler",
@@ -55,12 +29,5 @@
         "price": 8000,
         "imageUrl": "/images/dogs/shih_tzu.jpg",
         "imageAlt": "Um adorável Shih Tzu."
-    },
-    {
-        "name": "Yorkshire Terrier",
-        "uuid": "yorkshire_terrier",
-        "price": 2800,
-        "imageUrl": "/images/dogs/yorkshire_terrier.webp",
-        "imageAlt": "Um pequeno Yorkshire Terrier."
     }
 ]
