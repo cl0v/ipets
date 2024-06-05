@@ -46,6 +46,14 @@ export default defineEventHandler(async event => {
 		},
 	})
 
-	return { url: response.sandbox_init_point } //TODO: substituir pelo de producao
+	const dev = process.dev
+
+	if (dev) {
+		return { url: response.sandbox_init_point } //TODO: substituir pelo de producao
+
+	} else {
+		return { url: response.init_point }
+	}
+
 
 })

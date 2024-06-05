@@ -42,7 +42,7 @@
           <!-- Reviews -->
           <!-- <DetailsReviews/> -->
 
-          <form class="mt-10">
+          <form class="mt-10" @submit.prevent="submitForm">
             <!-- Colors -->
             <div>
               <h3 class="text-sm font-medium text-gray-900">{{ $t('details.color') }}</h3>
@@ -64,11 +64,10 @@
               </div>
               <DetailsGender />
             </div>
-            <a type="submit" href="/user/register"
-              style="color: white;"
+            <button type="submit" style="color: white;"
               class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               Comprar
-            </a>
+              </ button>
           </form>
         </div>
 
@@ -120,12 +119,12 @@
 </template>
 
 <script setup lang="ts">
-import usePetPrice from '~/composables/priceState';
-import usePetImages from '~/composables/imagesState';
+import { encodeToken } from '~/utils/jwtEncode';
+import genders from "~/assets/jsons/genders.json"
 
 const { breed } = useRoute().params
 
-let { data: details, error } = await useFetch('/api/details', {
+const { data: details, error } = await useFetch('/api/details', {
   query: { breed: breed }
 })
 
@@ -134,6 +133,46 @@ const pet = details.value!
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
 useFetchPriceNImages()
+
+
+const submitForm = () => {
+
+  const secret = 'user-preferences';
+
+  const { breed } = useRoute().params
+
+  let url = new URL(window.location.href);
+
+  // Atualiza o parâmetro de consulta
+  const color = url.searchParams.get('color');
+  const gender = url.searchParams.get('gender');
+  const size = url.searchParams.get('size');
+  
+  const colorName = (pet.colors.find((e) => e.query == color?.toString()) ?? pet.colors[0]).name
+  const genderName = (genders.find((e) => e.query == gender?.toString()) ?? genders[0]).name
+  const sizeName = (pet.sizes.find((e) => e.query == size?.toString()) ?? pet.sizes[0]).name
+
+  console.log(colorName, genderName, sizeName)
+
+  const data = {
+    breed: pet.name,
+    qBreed: breed,
+    color: colorName,
+    qColor: color,
+    gender: genderName,
+    qGender: gender,
+    size: sizeName,
+    qSize: size,
+  };
+
+  const jwt = encodeToken(data, secret);
+
+  // return `/user/register?intent=${jwt}`
+  navigateTo(`/user/register?intent=${jwt}`);
+  // Redireciona para o user-register
+  // Envia um JWT contendo as preferencias selecionadas pelo usuario
+
+}
 
 </script>
 
