@@ -84,6 +84,15 @@
 const pending = ref(false)
 
 
+const name = defineModel('name', { default: 'APRO', })
+const cpf = defineModel('cpf', { default: '5031 4332 1540 6351' })
+const phone = defineModel('phone', { default: '5533997312898' })
+const whatsapp = defineModel('whatsapp', { default: '5533997312898' })
+const address = defineModel('address', { default: 'Centro' })
+const city = defineModel('city', { default: 'Joaima' })
+const cep = defineModel('cep', { default: '39890000' })
+
+
 const { intent } = useRoute().query
 
 const details = decodeToken<IntentType>(intent!.toString())
