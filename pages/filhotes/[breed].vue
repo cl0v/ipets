@@ -148,15 +148,12 @@ const submitForm = () => {
   const color = url.searchParams.get('color');
   const gender = url.searchParams.get('gender');
   const size = url.searchParams.get('size');
-  
+
   const colorName = (pet.colors.find((e) => e.query == color?.toString()) ?? pet.colors[0]).name
   const genderName = (genders.find((e) => e.query == gender?.toString()) ?? genders[0]).name
   const sizeName = (pet.sizes.find((e) => e.query == size?.toString()) ?? pet.sizes[0]).name
 
-  console.log(colorName, genderName, sizeName)
-
-
-const { petPrice } = usePetPrice()
+  const { petPrice } = usePetPrice()
 
   const data = {
     breed: pet.name,
@@ -172,8 +169,8 @@ const { petPrice } = usePetPrice()
 
   const jwt = encodeToken(data, secret);
 
-  // return `/user/register?intent=${jwt}`
   navigateTo(`/user/register?intent=${jwt}`);
+  // return `/user/register?intent=${jwt}`
   // Redireciona para o user-register
   // Envia um JWT contendo as preferencias selecionadas pelo usuario
 

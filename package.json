@@ -19,12 +19,15 @@
     "@nuxtjs/tailwindcss": "^6.12.0",
     "criptoya": "^1.0.0",
     "firebase": "^10.12.2",
+    "jwt-decode": "^4.0.0",
+    "jwt-encode": "^1.0.1",
     "mercadopago": "^2.0.9",
     "nuxt": "^3.11.2",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@types/jwt-encode": "^1.0.3",
     "@types/whatwg-fetch": "^0.0.33"
   }
 }

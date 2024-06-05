@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <div class="w-1/2">
-      <form class="max-w-md mx-auto">
+      <form class="max-w-md mx-auto" @submit.prevent="submitForm">
         <div class="mb-4">
           <label for="name" class="block text-gray-700 font-bold mb-2">Nome *</label>
           <input type="text" id="name"
@@ -37,18 +37,20 @@
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
-        <PayButton />
+        <UButton type="submit" :loading="pending" block size="xl" icon="i-mdi-credit-card">
+          Continuar para pagamento
+        </UButton>
       </form>
     </div>
     <div class="w-1/2 bg-gray-100 p-4">
       <h2 class="text-xl font-bold mb-4">{{ $t("register.title") }}</h2>
       <div class="mb-4">
         <p class="text-gray-700 font-bold">{{ $t("register.details") }}</p>
-        <p>{{ breed }}, {{ color }}, {{ gender }}, {{ size }}</p>
+        <p>{{ details.breed }}, {{ details.color }}, {{ details.gender }}, {{ details.size }}</p>
       </div>
       <div class="mb-4">
         <p class="text-gray-700 font-bold"> {{ $t("register.total") }}</p>
-        <p>{{ price }}</p>
+        <p>{{ details.price }}</p>
       </div>
       <!-- <div class="mb-4">
         <p class="text-gray-700 font-bold">{{ $t("register.description") }}</p>
@@ -72,9 +74,51 @@
 </template>
 
 <script setup lang="ts">
+
+const pending = ref(false)
+
+interface IntentType {
+  breed: string
+  qBreed: string
+  color: string
+  qColor: string
+  gender: string
+  qGender: string
+  size: string
+  qSize: string
+  price: number
+
+}
+
 const { intent } = useRoute().query
 
-const { breed, color, gender, size, price } = decodeToken(intent)
+const details = decodeToken<IntentType>(intent!.toString())
 
-console.log(decodeToken(intent))
+const submitForm = async () => {
+  pending.value = true
+
+  //TODO: Adicionar um endpoint para criar usuário no firebase
+
+  /*
+  const response = await $fetch<{ url: string }>('/api/create-order', {
+    method: 'POST',
+    body: {
+      breed: details.qBreed,
+      size: details.qSize,
+      gender: details.qGender,
+      color: details.qColor,
+    },
+  })
+
+  pending.value = false
+
+  if (response.url) {
+    // TODO: Talvez seja melhor mudar para navigateTo
+    window.location.href = response.url
+  } else {
+    alert('Something went wrong')
+  }
+  */
+}
+
 </script>
