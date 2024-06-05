@@ -83,15 +83,13 @@
 
 const pending = ref(false)
 
-
-const name = defineModel('name', { default: 'APRO', })
-const cpf = defineModel('cpf', { default: '5031 4332 1540 6351' })
-const phone = defineModel('phone', { default: '5533997312898' })
-const whatsapp = defineModel('whatsapp', { default: '5533997312898' })
-const address = defineModel('address', { default: 'Centro' })
-const city = defineModel('city', { default: 'Joaima' })
-const cep = defineModel('cep', { default: '39890000' })
-
+const name = defineModel('name')
+const cpf = defineModel('cpf')
+const phone = defineModel('phone')
+const whatsapp = defineModel('whatsapp')
+const address = defineModel('address')
+const city = defineModel('city')
+const cep = defineModel('cep')
 
 const { intent } = useRoute().query
 
@@ -117,7 +115,7 @@ const submitForm = async () => {
     },
   })
 
-  
+
   const response = await $fetch<{ url: string }>('/api/create-order', {
     method: 'POST',
     body: {
@@ -139,7 +137,7 @@ const submitForm = async () => {
   } else {
     alert('Something went wrong')
   }
-  
+
 }
 
 </script>
