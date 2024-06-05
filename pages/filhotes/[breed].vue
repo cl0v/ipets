@@ -121,6 +121,7 @@
 <script setup lang="ts">
 import { encodeToken } from '~/utils/jwtEncode';
 import genders from "~/assets/jsons/genders.json"
+import usePetPrice from '~/composables/priceState';
 
 const { breed } = useRoute().params
 
@@ -154,6 +155,9 @@ const submitForm = () => {
 
   console.log(colorName, genderName, sizeName)
 
+
+const { petPrice } = usePetPrice()
+
   const data = {
     breed: pet.name,
     qBreed: breed,
@@ -163,6 +167,7 @@ const submitForm = () => {
     qGender: gender,
     size: sizeName,
     qSize: size,
+    price: petPrice.value
   };
 
   const jwt = encodeToken(data, secret);

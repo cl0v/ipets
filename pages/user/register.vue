@@ -11,7 +11,6 @@
         <div class="mb-4">
           <label for="phone" class="block text-gray-700 font-bold mb-2">Telefone *</label>
           <input type="tel" id="phone"
-           
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
@@ -28,13 +27,13 @@
         </div>
         <div class="mb-4">
           <label for="number" class="block text-gray-700 font-bold mb-2">Cidade *</label>
-          <input type="text" id="number" 
+          <input type="text" id="number"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
         <div class="mb-4">
           <label for="cep" class="block text-gray-700 font-bold mb-2">CEP *</label>
-          <input type="text" id="cep" 
+          <input type="text" id="cep"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
@@ -45,16 +44,16 @@
       <h2 class="text-xl font-bold mb-4">{{ $t("register.title") }}</h2>
       <div class="mb-4">
         <p class="text-gray-700 font-bold">{{ $t("register.details") }}</p>
-        <!-- <p>{{ breed }} {{ color }} {{ gender }} {{ size }}</p> -->
+        <p>{{ breed }}, {{ color }}, {{ gender }}, {{ size }}</p>
       </div>
       <div class="mb-4">
         <p class="text-gray-700 font-bold"> {{ $t("register.total") }}</p>
-        <p>Preo a ser pago</p>
+        <p>{{ price }}</p>
       </div>
-      <div class="mb-4">
+      <!-- <div class="mb-4">
         <p class="text-gray-700 font-bold">{{ $t("register.description") }}</p>
         <p>Breve descricao</p>
-      </div>
+      </div> -->
 
       <div class="mt-10">
         <h2 class="text-sm font-medium text-gray-900">{{ $t('register.more.title') }}</h2>
@@ -73,10 +72,9 @@
 </template>
 
 <script setup lang="ts">
-
 const { intent } = useRoute().query
-// const { breed, color, gender, size } = decodeToken(intent)
 
-console.log(decodeToken(intent?.toString()??''))
+const { breed, color, gender, size, price } = decodeToken(intent)
 
+console.log(decodeToken(intent))
 </script>
