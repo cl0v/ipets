@@ -8,16 +8,12 @@ import priceTable from "~/assets/jsons/price_table.json"
 
 
 export default defineEventHandler(async event => {
-	try {
-
-	}catch {
-	}
 	const runtimeConfig = useRuntimeConfig()
 	const body = await readBody(event)
 
 	const isDev = process.dev
 
-	const userDoc = await firestore.collection(isDev ? 'devUsers' : 'users').add(body)
+	const userDoc = await firestore.collection(isDev ? 'dev-users' : 'users').add(body)
 
 	const userId = userDoc.id
 
