@@ -1,4 +1,6 @@
 import json from '~/assets/jsons/price_table.json'
+import { femalePriceMultiplier } from '../../utils/constants'
+
 
 export default defineEventHandler((event) => {
     const { breed, gender, size, color } = getQuery(event)
@@ -9,12 +11,12 @@ export default defineEventHandler((event) => {
     const images = result!.images
     let price = result!.price
 
-    if(gender == 'female'){
-        price *= 1.20
+    if (gender == 'female') {
+        price *= femalePriceMultiplier
     }
 
     return {
-        images, 
+        images,
         price
     }
 })

@@ -83,24 +83,19 @@
 
 const pending = ref(false)
 
-const name = defineModel('name')
-const cpf = defineModel('cpf')
-const phone = defineModel('phone')
-const whatsapp = defineModel('whatsapp')
-const address = defineModel('address')
-const city = defineModel('city')
-const cep = defineModel('cep')
 
 const { intent } = useRoute().query
 
 const details = decodeToken<IntentType>(intent!.toString())
+
+
 
 const submitForm = async () => {
   pending.value = true
 
 
   //TODO: Adicionar um endpoint para criar usuário no firebase
-  const response = await $fetch<{ url: string }>('/api/create-user', {
+  const userId = await $fetch<{ url: string }>('/api/create-user', {
     method: 'POST',
     body: {
       name: name.value,
@@ -113,7 +108,7 @@ const submitForm = async () => {
     },
   })
 
-  /*
+  
   const response = await $fetch<{ url: string }>('/api/create-order', {
     method: 'POST',
     body: {
@@ -121,7 +116,9 @@ const submitForm = async () => {
       size: details.qSize,
       gender: details.qGender,
       color: details.qColor,
-      cpf: cpf
+      cpf: cpf,
+      userId: userId,
+      userName: name,
     },
   })
 
@@ -133,7 +130,7 @@ const submitForm = async () => {
   } else {
     alert('Something went wrong')
   }
-  */
+  
 }
 
 </script>

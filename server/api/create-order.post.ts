@@ -1,5 +1,6 @@
 import { Preference } from 'mercadopago'
 import { mercadopago } from '../utils/mercadopago'
+import { femalePriceMultiplier } from '../utils/constants'
 
 import details from '~/assets/jsons/breeds_details.json'
 
@@ -24,7 +25,7 @@ export default defineEventHandler(async event => {
 	let price = priceTable.find(price => price.uuid === body.breed && price.size === selectedSize?.query && price.color === selectedColor?.query)?.price
 
 	if (seletedGender.query == 'female') {
-		price = (price ?? 0) * 1.2
+		price = (price ?? 0) * femalePriceMultiplier
 	}
 
 	const response = await preference.create({
@@ -43,18 +44,22 @@ export default defineEventHandler(async event => {
 					unit_price: price ?? 5000, // O preço depende do filhote no json, consultar com base no uuid
 				},
 			],
+			metadata: {
+				uuid: body.userId
+			},
 			payer: {
-				"identification": {
-				  "type": "CPF",
-				  "number": "19119119100"
+				name: body.userName,
+				identification: {
+					type: "CPF",
+					number: body.cpf
 				},
-			  },
+			},
 		},
 	})
 
-	const dev = process.dev
+	const isDev = process.dev
 
-	if (dev) {
+	if (isDev) {
 		return { url: response.sandbox_init_point } //TODO: substituir pelo de producao
 
 	} else {
