@@ -41,18 +41,27 @@
       </form>
     </div>
     <div class="w-1/2 bg-gray-100 p-4">
-      <h2 class="text-xl font-bold mb-4">Detalhes do Produto</h2>
+      <h2 class="text-xl font-bold mb-4">{{ $t("register.title") }}</h2>
       <div class="mb-4">
-        <p class="text-gray-700 font-bold">Nome:</p>
+        <p class="text-gray-700 font-bold">{{ $t("register.details") }}</p>
         <p>Dados do filhote</p>
       </div>
       <div class="mb-4">
-        <p class="text-gray-700 font-bold">Preço:</p>
+        <p class="text-gray-700 font-bold"> {{ $t("register.total") }}</p>
         <p>Preo a ser pago</p>
       </div>
       <div class="mb-4">
-        <p class="text-gray-700 font-bold">Descrição:</p>
+        <p class="text-gray-700 font-bold">{{ $t("register.description") }}</p>
         <p>Breve descricao</p>
+      </div>
+
+      <div class="mt-10">
+        <h2 class="text-sm font-medium text-gray-900">{{ $t('register.more.title') }}</h2>
+        <div class="mt-2 space-y-1">
+          <p class="text-xs text-gray-600">{{ $t('register.more.first') }}</p>
+          <p class="text-xs text-gray-600">{{ $t('register.more.second') }}</p>
+          <p class="text-xs text-gray-600">{{ $t('register.more.third') }}</p>
+        </div>
       </div>
       <!-- <div class="mb-4">
         <p class="text-gray-700 font-bold">Imagem:</p>

@@ -3,6 +3,18 @@
     "currency": "R$",
     "currencyCode": "BRL"
   },
+  "register": {
+    "title": "Detalhes do Filhote",
+    "details": "Informações do filhote",
+    "total": "Valor total",
+    "description": "Descrição",
+    "more": {
+      "title": "Informações adicionais",
+      "first": "Entraremos em contato por telefone ou WhatsApp para explicar as nuancias da compra e o que o seu pet precisa.",
+      "second": "Você acompanhará o andamento do seu pet enquanto mantém contato conosco.",
+      "third": "Caso seu telefone de contato seja o mesmo do WhatsApp não é necessário o preenchimento do campo *WhatsApp*."
+    }
+  },
   "details": {
     "kennel": {
       "reviews": "Avaliações do Canil"
@@ -22,7 +34,6 @@
       "microchip": "Microchipado",
       "vaccinnes": "Vacinado e Vermifugado corretamente",
       "ship": "Frete gratuito para todo o Brasil"
-      
     },
     "specs": {
       "images": "As imagens são ilustrativas e você terá mais opções de escolha após a confirmação do pagamento.",
