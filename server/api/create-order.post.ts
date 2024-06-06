@@ -5,6 +5,8 @@ import { femalePriceMultiplier } from '../utils/constants'
 import details from '~/assets/jsons/breeds_details.json'
 import availableGenders from "~/assets/jsons/genders.json"
 import priceTable from "~/assets/jsons/price_table.json"
+import { addOrderRef } from '../utils/firebase'
+
 
 export default defineEventHandler(async event => {
 	const runtimeConfig = useRuntimeConfig()
@@ -12,9 +14,7 @@ export default defineEventHandler(async event => {
 
 	const isDev = process.dev
 
-	const userDoc = await firestore.collection(isDev ? 'dev-users' : 'users').add(body)
-
-	const userId = userDoc.id
+	const userId = await addOrderRef(body)
 
 	const preference = new Preference(mercadopago)
 
@@ -46,9 +46,9 @@ export default defineEventHandler(async event => {
 					unit_price: price ?? 5000, // O preço depende do filhote no json, consultar com base no uuid
 				},
 			],
-			// metadata: {
-			// 	uuid: userId
-			// },
+			metadata: {
+				uuid: userId
+			},
 			// payer: {
 			// 	name: body.name,
 			// 	identification: {

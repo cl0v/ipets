@@ -1,0 +1,3 @@
+rebuild:
+	npx nuxi prepare
+
