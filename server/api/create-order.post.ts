@@ -6,7 +6,6 @@ import details from '~/assets/jsons/breeds_details.json'
 import availableGenders from "~/assets/jsons/genders.json"
 import priceTable from "~/assets/jsons/price_table.json"
 
-
 export default defineEventHandler(async event => {
 	const runtimeConfig = useRuntimeConfig()
 	const body = await readBody(event)
@@ -47,9 +46,9 @@ export default defineEventHandler(async event => {
 					unit_price: price ?? 5000, // O preço depende do filhote no json, consultar com base no uuid
 				},
 			],
-			metadata: {
-				uuid: userId
-			},
+			// metadata: {
+			// 	uuid: userId
+			// },
 			// payer: {
 			// 	name: body.name,
 			// 	identification: {
@@ -67,5 +66,6 @@ export default defineEventHandler(async event => {
 		return { url: response.init_point }
 	}
 
-
 })
+
+
