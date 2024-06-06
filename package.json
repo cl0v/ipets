@@ -15,7 +15,6 @@
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.16.0",
     "@nuxtjs/i18n": "^8.3.1",
-    "@nuxtjs/sentry": "^8.0.7",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "criptoya": "^1.0.0",
     "firebase": "^10.12.2",
@@ -23,6 +22,7 @@
     "jwt-decode": "^4.0.0",
     "jwt-encode": "^1.0.1",
     "mercadopago": "^2.0.9",
+    "nuxi": "^3.11.1",
     "nuxt": "^3.11.2",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"

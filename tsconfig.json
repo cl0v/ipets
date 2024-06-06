@@ -6,6 +6,7 @@
       "ESNext.AsyncIterable",
       "DOM"
     ],
+    "allowJs": true,
     "types": [
       "@nuxt/types",
       "@types/node",
