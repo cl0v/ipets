@@ -5,7 +5,7 @@ import { femalePriceMultiplier } from '../utils/constants'
 import details from '~/assets/jsons/breeds_details.json'
 import availableGenders from "~/assets/jsons/genders.json"
 import priceTable from "~/assets/jsons/price_table.json"
-import { addOrderRef } from '../utils/firebase'
+import { addDocument } from '../utils/firebase'
 
 
 export default defineEventHandler(async event => {
@@ -14,7 +14,7 @@ export default defineEventHandler(async event => {
 
 	const isDev = process.dev
 
-	const userId = addOrderRef(isDev ? 'dev-orders' : 'orders', body)
+	const userId = addDocument(isDev ? 'dev-orders' : 'orders', body)
 
 	const preference = new Preference(mercadopago)
 

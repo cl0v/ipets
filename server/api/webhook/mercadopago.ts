@@ -1,6 +1,8 @@
 import crypto from 'crypto'
 import { Payment } from 'mercadopago'
 
+import { addDocument } from '../../utils/firebase'
+
 export default defineEventHandler(async event => {
 	const runtimeConfig = useRuntimeConfig()
 
@@ -45,13 +47,13 @@ export default defineEventHandler(async event => {
 	})
 
 	if (getPayment.status === 'approved') {
-        const isDev = process.dev
+		const isDev = process.dev
 		// TODO: handle payment
-		addOrderRef(isDev ? 'dev-payment': 'payment', {
-            status: getPayment.status,
-            uuid: getPayment.metadata.uuid,
-            id: getPayment.id
-        })
+		addDocument(isDev ? 'dev-payment' : 'payment', {
+			status: getPayment.status,
+			uuid: getPayment.metadata.uuid,
+			id: getPayment.id
+		})
 		console.log('Payment successfull 777')
 	}
 
