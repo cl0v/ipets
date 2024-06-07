@@ -1,5 +1,6 @@
-import { initializeApp, cert } from 'firebase-admin/app';
-import { getFirestore } from 'firebase-admin/firestore';
+import { useFirestore } from 'vuefire'
+import { addDoc, collection} from 'firebase/firestore'
+import firebaseServer from './useFirebaseServer'
 
 
 
