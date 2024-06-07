@@ -17,17 +17,19 @@
     "@nuxtjs/i18n": "^8.3.1",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "criptoya": "^1.0.0",
+    "firebase": "^10.12.2",
     "jwt-decode": "^4.0.0",
     "jwt-encode": "^1.0.1",
     "mercadopago": "^2.0.9",
     "nuxt": "^3.11.2",
     "nuxt-vuefire": "^1.0.2",
     "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "vue-router": "^4.3.2",
+    "vuefire": "^3.1.23"
   },
   "devDependencies": {
     "@nuxt/types": "^2.17.3",
-    "@nuxt/typescript-build": "^3.0.2",
+    "@nuxt/typescript-build": "any",
     "typescript": "^5.4.5"
   },
   "optionalDependencies": {
