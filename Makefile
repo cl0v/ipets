@@ -1,3 +1,3 @@
 rebuild:
-	npx nuxi prepare
+	nuxi prepare
 
