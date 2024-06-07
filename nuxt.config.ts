@@ -1,13 +1,13 @@
 export default defineNuxtConfig({
   // debug: true,
-  devtools: { enabled: true }, // Desativar em produção
+  // devtools: { enabled: true }, // Desativar em produção
   modules: [
     "@nuxt/ui",
     '@nuxt/image',
     "@nuxt/content",
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
-    "nuxt-vuefire"
+    "nuxt-vuefire",
   ],
   vuefire: {
     config: {
