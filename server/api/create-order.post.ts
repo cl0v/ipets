@@ -60,7 +60,7 @@ export default defineEventHandler(async event => {
 	})
 
 	if (isDev) {
-		return { url: response.sandbox_init_point } //TODO: substituir pelo de producao
+		return { url: isDev ? response.sandbox_init_point : response.init_point }
 
 	} else {
 		return { url: response.init_point }
