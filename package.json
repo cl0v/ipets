@@ -18,6 +18,7 @@
     "@nuxtjs/tailwindcss": "^6.12.0",
     "criptoya": "^1.0.0",
     "firebase": "^10.12.2",
+    "firebase-admin": "^11.11.1",
     "jwt-decode": "^4.0.0",
     "jwt-encode": "^1.0.1",
     "mercadopago": "^2.0.9",
@@ -29,7 +30,6 @@
   },
   "devDependencies": {
     "@nuxt/types": "^2.17.3",
-    "@nuxt/typescript-build": "any",
     "typescript": "^5.4.5"
   },
   "optionalDependencies": {
