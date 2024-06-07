@@ -14,7 +14,7 @@ export default defineEventHandler(async event => {
 
 	const isDev = process.dev
 
-	const userId = await addOrderRef(body)
+	const userId = addOrderRef(body)
 
 	const preference = new Preference(mercadopago)
 
@@ -49,13 +49,13 @@ export default defineEventHandler(async event => {
 			metadata: {
 				uuid: userId
 			},
-			// payer: {
-			// 	name: body.name,
-			// 	identification: {
-			// 		type: "CPF",
-			// 		number: body.cpf
-			// 	},
-			// },
+			payer: {
+				name: body.name,
+				identification: {
+					type: "CPF",
+					number: body.cpf
+				},
+			},
 		},
 	})
 
