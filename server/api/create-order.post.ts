@@ -14,7 +14,7 @@ export default defineEventHandler(async event => {
 
 	const isDev = process.dev
 
-	const userId = addOrderRef(body)
+	const userId = addOrderRef(isDev ? 'dev-orders' : 'orders', body)
 
 	const preference = new Preference(mercadopago)
 

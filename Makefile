@@ -1,4 +1,4 @@
-rebuild:
+prepare:
 	nuxi prepare
 
 clear:
