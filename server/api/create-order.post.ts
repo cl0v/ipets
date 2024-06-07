@@ -13,8 +13,13 @@ export default defineEventHandler(async event => {
 	const body = await readBody(event)
 
 	const isDev = process.dev
+	let userId = ''
 
-	const userId = addDocument(isDev ? 'dev-orders' : 'orders', body)
+	try {
+		userId = await addDocument(isDev ? 'dev-orders' : 'orders', body)
+	} catch {
+		console.log('Error on creating order')
+	}
 
 	const preference = new Preference(mercadopago)
 

@@ -51,8 +51,9 @@ export default defineEventHandler(async event => {
 		// TODO: handle payment
 		addDocument(isDev ? 'dev-payment' : 'payment', {
 			status: getPayment.status,
-			uuid: getPayment.metadata.uuid,
-			id: getPayment.id
+			meta: getPayment.metadata,
+			id: getPayment.id,
+			payer: getPayment.payer
 		})
 		console.log('Payment successfull 777')
 	}
