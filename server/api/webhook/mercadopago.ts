@@ -1,3 +1,4 @@
+import { sql } from '@vercel/postgres'
 import crypto from 'crypto'
 import { Payment } from 'mercadopago'
 
@@ -45,12 +46,13 @@ export default defineEventHandler(async event => {
 	})
 
 	if (paymentInfo.status === 'approved') {
+		await sql`INSERT INTO payments (order_id, payment_id, payment_status) VALUES (${paymentInfo.metadata.uuid}, ${paymentInfo.id}, ${paymentInfo.status})`;
 		// await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
 		console.log('Payment successfull 777')
 	}
 	else {
 		// await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
-		console.log('Payment idk 404')
+		setResponseStatus(event, 403)
 	}
 
 
