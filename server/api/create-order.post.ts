@@ -34,7 +34,7 @@ export default defineEventHandler(async event => {
 		body: {
 			auto_return: 'approved',
 			back_urls: {
-				success: `${runtimeConfig.public.baseURL}/payment/success`,
+				success: `${isDev ? runtimeConfig.public.devBaseURL : runtimeConfig.public.baseURL}/payment/success`,
 			},
 			items: [
 				{

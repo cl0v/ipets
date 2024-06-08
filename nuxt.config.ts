@@ -13,6 +13,9 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
+  nitro: {
+    plugins: ['pluguins/firebase.ts']
+  },
   runtimeConfig: {
     mercadopagoWebhookSecret: process.env.NUXT_MERCADOPAGO_WEBHOOK_SECRET,
     mercadopagoAccessToken: process.env.NUXT_MERCADOPAGO_ACCESS_TOKEN,
@@ -21,6 +24,7 @@ export default defineNuxtConfig({
     // firebasePrivateKey: process.env.NUXT_PUBLIC_FIREBASE_PRIVATE_KEY,
     public: {
       baseURL: 'https://ipets.dreampuppy.com.br',
+      devBaseURL: 'localhost:3000',
       mercadopagoKey: process.env.NUXT_PUBLIC_MERCADOPAGO_KEY,
     },
   },
