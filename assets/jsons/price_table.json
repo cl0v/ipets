@@ -108,12 +108,36 @@
         "uuid": "rottweiler",
         "color": "black",
         "size": "default",
-        "price": 2800,
+        "price": 2150,
         "images": [
             "https://i.pinimg.com/474x/0d/86/a4/0d86a465b528fe32f2663766f4a92457.jpg",
             "https://www.patasdacasa.com.br/sites/patasdacasa/files/rottweiler-filhote7.jpg",
             "https://www.oliberal.com/image/contentid/policy:1.606263:1666994012/Rottweiler-filhote-pixabay.png?f=3x2&q=1.0&w=700&$p$f$q$w=5494a74",
             "/images/dogs/rottweiler.jpg"
+        ]
+    },
+    {
+        "uuid": "maltes",
+        "color": "white",
+        "size": "default",
+        "price": 3400,
+        "images": [
+            "https://www.petz.com.br/blog//wp-content/uploads/2023/04/como-cuidar-de-um-cachorro-maltes-2.jpg",
+            "https://queromeufilhote.com.br/wp-content/uploads/2024/05/WhatsApp-Image-2020-09-22-at-17.08.43.jpeg",
+            "https://www.adoropets.com.br/wp-content/uploads/2018/03/maltes.jpg",
+            "https://filhotes.canillc.com.br/imagens/filhote-maltes-micro-a-venda.jpg"
+        ]
+    },
+    {
+        "uuid": "shihtzu",
+        "color": "white",
+        "size": "default",
+        "price": 3100,
+        "images": [
+            "https://images.unsplash.com/photo-1606409696374-ad132c6388ae?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://i.ytimg.com/vi/OdJt61KsqRA/sddefault.jpg",
+            "/images/dogs/shih_tzu.jpg",
+            "https://st3.depositphotos.com/4031919/17673/i/450/depositphotos_176735630-stock-photo-portrait-cute-little-shih-tzu.jpg"
         ]
     }
 ]

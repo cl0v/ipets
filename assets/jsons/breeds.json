@@ -9,21 +9,21 @@
     {
         "name": "Maltês",
         "uuid": "maltes",
-        "price": 8000,
+        "price": 3400,
         "imageUrl": "/images/dogs/maltes.webp",
         "imageAlt": "Um fofo Maltês."
     },
     {
         "name": "Rottweiler",
         "uuid": "rottweiler",
-        "price": 2100,
+        "price": 2150,
         "imageUrl": "/images/dogs/rottweiler.jpg",
         "imageAlt": "Um forte Rottweiler."
     },
     {
         "name": "Shih-Tzu",
         "uuid": "shihtzu",
-        "price": 8000,
+        "price": 3100,
         "imageUrl": "/images/dogs/shih_tzu.jpg",
         "imageAlt": "Um adorável Shih Tzu."
     }
