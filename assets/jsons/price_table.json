@@ -1,9 +1,21 @@
 [
     {
-        "uuid": "golden_retriever",
+        "uuid": "cerberus",
         "color": "gold1",
         "size": "default",
         "price": 1,
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/000/059/409/large/cerber.jpg?1399572051",
+            "https://images.hive.blog/0x0/https://files.peakd.com/file/peakd-hive/elevator09/Eos1igaJKipjzi1Hiki7bnyauF7hggQuJ6mXENiPVyAUmRDzNB92UVLh4vwk2pxPCHz.JPG",
+            "https://m.media-amazon.com/images/I/61tlpqbOGqS._AC_UF894,1000_QL80_.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkA168RPPr5gsCKBiWrRC-vSiithr8ktLIBw&s"
+        ]
+    },
+    {
+        "uuid": "golden_retriever",
+        "color": "gold1",
+        "size": "default",
+        "price": 3900,
         "images": [
             "/images/dogs/golden_retriever/gold1_0.heic",
             "/images/dogs/golden_retriever/gold1_1.heic",
@@ -15,21 +27,21 @@
         "uuid": "golden_retriever",
         "color": "gold2",
         "size": "default",
-        "price": 3200,
+        "price": 3900,
         "images": []
     },
     {
         "uuid": "golden_retriever",
         "color": "gold3",
         "size": "default",
-        "price": 3700,
+        "price": 3900,
         "images": []
     },
     {
         "uuid": "golden_retriever",
         "color": "cream",
         "size": "default",
-        "price": 2800,
+        "price": 3900,
         "images": []
     },
     {
@@ -90,6 +102,18 @@
             "/images/dogs/akita.webp",
             "/images/dogs/akita.webp",
             "/images/dogs/akita.webp"
+        ]
+    },
+    {
+        "uuid": "rottweiler",
+        "color": "black",
+        "size": "default",
+        "price": 2800,
+        "images": [
+            "https://i.pinimg.com/474x/0d/86/a4/0d86a465b528fe32f2663766f4a92457.jpg",
+            "https://www.patasdacasa.com.br/sites/patasdacasa/files/rottweiler-filhote7.jpg",
+            "https://www.oliberal.com/image/contentid/policy:1.606263:1666994012/Rottweiler-filhote-pixabay.png?f=3x2&q=1.0&w=700&$p$f$q$w=5494a74",
+            "/images/dogs/rottweiler.jpg"
         ]
     }
 ]

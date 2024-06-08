@@ -7,18 +7,12 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
-    "nuxt-vuefire",
   ],
-  vuefire: {
-    config: {
-      apiKey: "AIzaSyAMZf5xEsBpFZxOpVE3ualVETZSNuUXubk",
-      authDomain: "ipets-c854c.firebaseapp.com",
-      projectId: "ipets-c854c",
-      storageBucket: "ipets-c854c.appspot.com",
-      messagingSenderId: "926293712378",
-      appId: "1:926293712378:web:60762d7dc7486e91cb5843",
-      measurementId: "G-MX3J0MYSNQ"
-    },
+  css: [
+    '~/assets/css/tailwind.css',
+  ],
+  ui:{
+    global: true,
   },
   content: {},
   colorMode: {
@@ -32,6 +26,7 @@ export default defineNuxtConfig({
     // firebasePrivateKey: process.env.NUXT_PUBLIC_FIREBASE_PRIVATE_KEY,
     public: {
       baseURL: 'https://ipets.dreampuppy.com.br',
+      devBaseURL: 'localhost:3000',
       mercadopagoKey: process.env.NUXT_PUBLIC_MERCADOPAGO_KEY,
     },
   },

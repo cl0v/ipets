@@ -4,8 +4,8 @@
     <Title>{{ pet.name }}</Title>
   </Head>
   <pre v-if="error">{{ error }}</pre>
-  <div v-else class="bg-white">
-    <div class="pt-6">
+  <div v-else>
+    <div>
       <nav aria-label="Breadcrumb">
         <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <li v-for="breadcrumb in pet.breadcrumbs" :key="breadcrumb.id">
@@ -64,10 +64,10 @@
               </div>
               <DetailsGender />
             </div>
-            <button type="submit" style="color: white;"
-              class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <UButton type="submit" style="color: white" <!--
+              class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent px-8 py-3 text-white font-medium focus:outline-none focus:ring-2 focus:ring-offset-2">
               Comprar
-              </ button>
+              </ UButton>
           </form>
         </div>
 

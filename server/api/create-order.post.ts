@@ -1,27 +1,27 @@
 import { Preference } from 'mercadopago'
 import { mercadopago } from '../utils/mercadopago'
 import { femalePriceMultiplier } from '../utils/constants'
+import { sql } from "@vercel/postgres";
 
 import details from '~/assets/jsons/breeds_details.json'
 import availableGenders from "~/assets/jsons/genders.json"
 import priceTable from "~/assets/jsons/price_table.json"
-import { addDocument } from '../utils/firebase'
-
 
 export default defineEventHandler(async event => {
 	const runtimeConfig = useRuntimeConfig()
 	const body = await readBody(event)
 
-	const isDev = process.dev
-	let userId = ''
+	const isDev = process.dev;
 
-	try {
-		userId = await addDocument(isDev ? 'dev-orders' : 'orders', body)
-	} catch {
-		console.log('Error on creating order')
-	}
 
-	const preference = new Preference(mercadopago)
+	const orderId = await sql`
+	INSERT INTO orders (
+	  breed, size, gender, color, name, cpf, phone, whatsapp, address, city, cep
+	) VALUES (
+	  ${body.breed}, ${body.size}, ${body.gender}, ${body.color}, ${body.name},
+	  ${body.cpf}, ${body.phone}, ${body.whatsapp}, ${body.address}, ${body.city}, ${body.cep}
+	) RETURNING id
+  `;
 
 	const selectedBreed = details.find(breed => breed.uuid === body.breed)
 	const selectedColor = selectedBreed?.colors.find(color => color.query === body.color) ?? selectedBreed?.colors[0]
@@ -35,11 +35,12 @@ export default defineEventHandler(async event => {
 		price = (price ?? 0) * femalePriceMultiplier
 	}
 
+	const preference = new Preference(mercadopago)
 	const response = await preference.create({
 		body: {
 			auto_return: 'approved',
 			back_urls: {
-				success: `${runtimeConfig.public.baseURL}/payment/success`,
+				success: `${isDev ? runtimeConfig.public.devBaseURL : runtimeConfig.public.baseURL}/payment/success`,
 			},
 			items: [
 				{
@@ -52,7 +53,7 @@ export default defineEventHandler(async event => {
 				},
 			],
 			metadata: {
-				uuid: userId
+				uuid: orderId.rows[0].id
 			},
 			payer: {
 				name: body.name,

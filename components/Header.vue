@@ -1,6 +1,6 @@
 <template>
   <header class="bg-white">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <ULink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/logo.png" class="h-12" alt="iPets Logo" />

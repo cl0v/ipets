@@ -42,21 +42,19 @@ export default defineEventHandler(async event => {
 	// valid signature
 	const payment = new Payment(mercadopago)
 
-	const getPayment = await payment.get({
+	const paymentInfo = await payment.get({
 		id: body.data.id,
 	})
 
-	if (getPayment.status === 'approved') {
-		const isDev = process.dev
-		// TODO: handle payment
-		addDocument(isDev ? 'dev-payment' : 'payment', {
-			status: getPayment.status,
-			meta: getPayment.metadata,
-			id: getPayment.id,
-			payer: getPayment.payer
-		})
+	if (paymentInfo.status === 'approved') {
+		// await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
 		console.log('Payment successfull 777')
 	}
+	else {
+		// await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
+		console.log('Payment idk 404')
+	}
+
 
 	setResponseStatus(event, 201)
 	return true

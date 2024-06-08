@@ -1,13 +1,11 @@
 [
-    
     {
         "name": "Golden Retriever",
         "uuid": "golden_retriever",
-        "price": 4500,
+        "price": 3900,
         "imageUrl": "/images/dogs/golden_retriever.heic",
         "imageAlt": "Um amigável Golden Retriever."
     },
-    
     {
         "name": "Maltês",
         "uuid": "maltes",
@@ -15,17 +13,16 @@
         "imageUrl": "/images/dogs/maltes.webp",
         "imageAlt": "Um fofo Maltês."
     },
-    
     {
         "name": "Rottweiler",
         "uuid": "rottweiler",
-        "price": 1800,
+        "price": 2100,
         "imageUrl": "/images/dogs/rottweiler.jpg",
         "imageAlt": "Um forte Rottweiler."
     },
     {
-        "name": "Shih Tzu",
-        "uuid": "shih_tzu",
+        "name": "Shih-Tzu",
+        "uuid": "shihtzu",
         "price": 8000,
         "imageUrl": "/images/dogs/shih_tzu.jpg",
         "imageAlt": "Um adorável Shih Tzu."
