@@ -13,7 +13,7 @@ export default defineEventHandler(async event => {
 
 	const isDev = process.dev
 
-	const userId = await addOrderRef(body)
+	const userId = ''//await addOrderRef(body)
 
 	const preference = new Preference(mercadopago)
 
