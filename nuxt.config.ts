@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
   ],
-  
   content: {},
   colorMode: {
     preference: 'light'
