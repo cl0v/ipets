@@ -45,11 +45,11 @@ export default defineEventHandler(async event => {
 	})
 
 	if (paymentInfo.status === 'approved') {
-		await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
+		// await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
 		console.log('Payment successfull 777')
 	}
 	else {
-		await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
+		// await linkOrderToPayment(paymentInfo.metadata.uuid, paymentInfo.status, paymentInfo.id,)
 		console.log('Payment idk 404')
 	}
 
