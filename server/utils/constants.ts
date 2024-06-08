@@ -1,1 +1,1 @@
-export const femalePriceMultiplier = 1.2;
+export const femalePriceMultiplier = 1.0;

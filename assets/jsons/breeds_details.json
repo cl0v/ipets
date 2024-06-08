@@ -166,5 +166,143 @@
             }
         ],
         "description": "Os Akita Inus são cães majestosos e leais, conhecidos por sua presença imponente e personalidade calma. Eles são ótimos companheiros para famílias e são conhecidos por sua coragem e proteção."
+    },
+    {
+        "uuid": "maltes",
+        "name": "Maltês",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Maltês",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4.5,
+            "totalCount": 150
+        },
+        "colors": [
+            {
+                "name": "Branco",
+                "class": "bg-white",
+                "selectedClass": "bg-zinc-100",
+                "query": "white"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Pequeno",
+                "inStock": true,
+                "query": "small"
+            }
+        ],
+        "description": "Os Malteses são conhecidos por seu pelo branco e sedoso e sua natureza carinhosa. Eles são ideais para quem procura um cão de companhia leal e afetuoso. Esta raça é especialmente adequada para quem vive em apartamentos devido ao seu tamanho compacto."
+    },
+
+    {
+        "uuid": "rottweiler",
+        "name": "Rottweiler",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Rottweiler",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4.7,
+            "totalCount": 200
+        },
+        "colors": [
+            {
+                "name": "Preto com Marrom",
+                "class": "bg-black",
+                "selectedClass": "bg-zinc-100",
+                "query": "black_and_tan"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Médio",
+                "inStock": true,
+                "query": "medium"
+            },
+            {
+                "name": "Grande",
+                "inStock": true,
+                "query": "large"
+            }
+        ],
+        "description": "Os Rottweilers são cães robustos e leais, conhecidos por sua força e inteligência. Eles são excelentes cães de guarda e companheiros leais, sendo ótimos para famílias que buscam um cão protetor e carinhoso."
+    },
+    {
+        "uuid": "shihtzu",
+        "name": "Shih Tzu",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Shih Tzu",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4.6,
+            "totalCount": 180
+        },
+        "colors": [
+            {
+                "name": "Branco",
+                "class": "bg-white",
+                "selectedClass": "bg-zinc-100",
+                "query": "white"
+            },
+            {
+                "name": "Preto",
+                "class": "bg-black",
+                "selectedClass": "bg-zinc-100",
+                "query": "black"
+            },
+            {
+                "name": "Dourado",
+                "class": "bg-amber-600",
+                "selectedClass": "bg-zinc-100",
+                "query": "gold"
+            },
+            {
+                "name": "Cinza",
+                "class": "bg-gray-400",
+                "selectedClass": "bg-zinc-100",
+                "query": "gray"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Pequeno",
+                "inStock": true,
+                "query": "small"
+            }
+        ],
+        "description": "Os Shih Tzus são cães pequenos e encantadores, conhecidos por seu pelo longo e luxuoso e sua natureza amigável. Eles são ótimos companheiros e são ideais para famílias que buscam um cão de companhia afetuoso e brincalhão."
     }
 ]

@@ -3,7 +3,7 @@
     {
         "name": "Golden Retriever",
         "uuid": "golden_retriever",
-        "price": 4500,
+        "price": 3900,
         "imageUrl": "/images/dogs/golden_retriever.heic",
         "imageAlt": "Um amigável Golden Retriever."
     },
@@ -25,7 +25,7 @@
     },
     {
         "name": "Shih Tzu",
-        "uuid": "shih_tzu",
+        "uuid": "shihtzu",
         "price": 8000,
         "imageUrl": "/images/dogs/shih_tzu.jpg",
         "imageAlt": "Um adorável Shih Tzu."
