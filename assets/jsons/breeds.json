@@ -1,5 +1,4 @@
 [
-    
     {
         "name": "Golden Retriever",
         "uuid": "golden_retriever",
@@ -7,7 +6,6 @@
         "imageUrl": "/images/dogs/golden_retriever.heic",
         "imageAlt": "Um amigável Golden Retriever."
     },
-    
     {
         "name": "Maltês",
         "uuid": "maltes",
@@ -15,7 +13,6 @@
         "imageUrl": "/images/dogs/maltes.webp",
         "imageAlt": "Um fofo Maltês."
     },
-    
     {
         "name": "Rottweiler",
         "uuid": "rottweiler",
