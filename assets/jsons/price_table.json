@@ -1,8 +1,6 @@
 [
     {
         "uuid": "cerberus",
-        "color": "gold1",
-        "size": "default",
         "price": 1,
         "images": [
             "https://cdnb.artstation.com/p/assets/images/images/000/059/409/large/cerber.jpg?1399572051",
@@ -12,21 +10,17 @@
         ]
     },
     {
-        "uuid": "cavalier_king_charles_spaniel",
-        "color": "blenheim",
-        "size": "default",
-        "price": 24800,
+        "uuid": "dachshund",
+        "price": 5000,
         "images": [
-            "https://i.pinimg.com/736x/07/b5/95/07b5953c2c33d9318f2b8b12315d39fa.jpg",
-            "https://blog-static.petlove.com.br/wp-content/uploads/2018/08/cavalier-king-charles-spaniel-filhote.jpg",
-            "https://love.doghero.com.br/wp-content/uploads/2017/02/Galeria-4-Cavalier.jpg",
-            "https://clubedocavalier.com.br/wp-content/uploads/2019/07/IMG-8489.jpg"
+            "https://www.poochandmutt.co.uk/cdn/shop/articles/download_11.jpg?v=1627313486",
+            "https://www.raisedrightpets.com/wp-content/uploads/2023/04/kojirou-sasaki-DLdDrb2d4F4-unsplash-1-scaled.jpg",
+            "https://cdn.sanity.io/images/4ij0poqn/production/70a269d4f5f3fde35ce383ed5f3e2327aba45b58-1200x700.jpg",
+            "https://www.patasdacasa.com.br/sites/patasdacasa/files/2023-07/cachorro-salsicha1.jpg"
         ]
     },
     {
         "uuid": "cavalier_king_charles_spaniel",
-        "color": "black",
-        "size": "default",
         "price": 24800,
         "images": [
             "https://i.pinimg.com/736x/07/b5/95/07b5953c2c33d9318f2b8b12315d39fa.jpg",
@@ -37,8 +31,6 @@
     },
     {
         "uuid": "golden_retriever",
-        "color": "gold1",
-        "size": "default",
         "price": 3900,
         "images": [
             "/images/dogs/golden_retriever/gold1_0.heic",
@@ -48,66 +40,7 @@
         ]
     },
     {
-        "uuid": "golden_retriever",
-        "color": "gold2",
-        "size": "default",
-        "price": 3900,
-        "images": []
-    },
-    {
-        "uuid": "golden_retriever",
-        "color": "gold3",
-        "size": "default",
-        "price": 3900,
-        "images": []
-    },
-    {
-        "uuid": "golden_retriever",
-        "color": "cream",
-        "size": "default",
-        "price": 3900,
-        "images": []
-    },
-    {
         "uuid": "pug",
-        "color": "apricot",
-        "size": "default",
-        "price": 2800,
-        "images": [
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg"
-        ]
-    },
-    {
-        "uuid": "pug",
-        "color": "fawn",
-        "size": "default",
-        "price": 2800,
-        "images": [
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg"
-        ]
-    },
-    {
-        "uuid": "pug",
-        "color": "black",
-        "size": "default",
-        "price": 2800,
-        "images": [
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg",
-            "/images/dogs/pug.jpg"
-        ]
-    },
-    {
-        "uuid": "pug",
-        "color": "silver",
-        "size": "default",
         "price": 2800,
         "images": [
             "/images/dogs/pug.jpg",
@@ -118,8 +51,6 @@
     },
     {
         "uuid": "akita_inu",
-        "color": "red",
-        "size": "default",
         "price": 2800,
         "images": [
             "/images/dogs/akita.webp",
@@ -130,8 +61,6 @@
     },
     {
         "uuid": "rottweiler",
-        "color": "black",
-        "size": "default",
         "price": 2150,
         "images": [
             "https://i.pinimg.com/474x/0d/86/a4/0d86a465b528fe32f2663766f4a92457.jpg",
@@ -142,8 +71,6 @@
     },
     {
         "uuid": "maltes",
-        "color": "white",
-        "size": "default",
         "price": 3400,
         "images": [
             "https://www.petz.com.br/blog//wp-content/uploads/2023/04/como-cuidar-de-um-cachorro-maltes-2.jpg",
@@ -154,8 +81,6 @@
     },
     {
         "uuid": "shihtzu",
-        "color": "white",
-        "size": "default",
         "price": 3100,
         "images": [
             "https://images.unsplash.com/photo-1606409696374-ad132c6388ae?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

@@ -14,6 +14,13 @@
         "imageAlt": "Um elegante Cavalier King Charles Spaniel."
     },
     {
+        "name": "Dachshund (Salsicha)",
+        "uuid": "dachshund",
+        "price": 5000,
+        "imageUrl": "images/dogs/dachshund.jpg",
+        "imageAlt": "Um pequeno Dachshund Miniatura."
+    },
+    {
         "name": "Maltês",
         "uuid": "maltes",
         "price": 3400,

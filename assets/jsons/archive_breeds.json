@@ -27,13 +27,7 @@
         "imageUrl": "/images/dogs/spitz_alemao.webp",
         "imageAlt": "Lulu da Pomerânia."
     },
-    {
-        "name": "Dachshund (Salsicha)",
-        "uuid": "dachshund",
-        "price": 6500,
-        "imageUrl": "images/dogs/dachshund.jpg",
-        "imageAlt": "Um pequeno Dachshund Miniatura."
-    },
+    
     {
         "name": "Akita Inu",
         "uuid": "akita_inu",
