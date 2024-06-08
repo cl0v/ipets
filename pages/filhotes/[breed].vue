@@ -122,6 +122,7 @@
 import { encodeToken } from '~/utils/jwtEncode';
 import genders from "~/assets/jsons/genders.json"
 import usePetPrice from '~/composables/priceState';
+import usePetImages from '~/composables/imagesState';
 
 const { breed } = useRoute().params
 
@@ -134,6 +135,12 @@ const pet = details.value!
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
 useFetchPriceNImages()
+
+
+
+const { petImages } = usePetImages();
+useSeoMeta({ ogImage: petImages.value[0] })
+
 
 
 const submitForm = () => {
