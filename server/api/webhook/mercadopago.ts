@@ -1,8 +1,6 @@
 import crypto from 'crypto'
 import { Payment } from 'mercadopago'
 
-import { addDocument } from '../../utils/firebase'
-
 export default defineEventHandler(async event => {
 	const runtimeConfig = useRuntimeConfig()
 
