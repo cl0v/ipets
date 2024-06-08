@@ -32,19 +32,8 @@
                 "class": "bg-orange-100",
                 "selectedClass": "bg-zinc-100",
                 "query": "cream"
-            },
-            {
-                "name": "Dourado",
-                "class": "bg-amber-800",
-                "selectedClass": "bg-zinc-100",
-                "query": "gold2"
-            },
-            {
-                "name": "Dourado Escuro",
-                "class": "bg-amber-950",
-                "selectedClass": "bg-zinc-100",
-                "query": "gold3"
             }
+           
         ],
         "sizes": [
             {
