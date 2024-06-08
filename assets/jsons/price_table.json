@@ -12,6 +12,30 @@
         ]
     },
     {
+        "uuid": "cavalier_king_charles_spaniel",
+        "color": "blenheim",
+        "size": "default",
+        "price": 24800,
+        "images": [
+            "https://i.pinimg.com/736x/07/b5/95/07b5953c2c33d9318f2b8b12315d39fa.jpg",
+            "https://blog-static.petlove.com.br/wp-content/uploads/2018/08/cavalier-king-charles-spaniel-filhote.jpg",
+            "https://love.doghero.com.br/wp-content/uploads/2017/02/Galeria-4-Cavalier.jpg",
+            "https://clubedocavalier.com.br/wp-content/uploads/2019/07/IMG-8489.jpg"
+        ]
+    },
+    {
+        "uuid": "cavalier_king_charles_spaniel",
+        "color": "black",
+        "size": "default",
+        "price": 24800,
+        "images": [
+            "https://i.pinimg.com/736x/07/b5/95/07b5953c2c33d9318f2b8b12315d39fa.jpg",
+            "https://blog-static.petlove.com.br/wp-content/uploads/2018/08/cavalier-king-charles-spaniel-filhote.jpg",
+            "https://love.doghero.com.br/wp-content/uploads/2017/02/Galeria-4-Cavalier.jpg",
+            "https://clubedocavalier.com.br/wp-content/uploads/2019/07/IMG-8489.jpg"
+        ]
+    },
+    {
         "uuid": "golden_retriever",
         "color": "gold1",
         "size": "default",

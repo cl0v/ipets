@@ -1,10 +1,10 @@
 <template>
-  <header class="bg-white">
+  <header class="bg-white text-black">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <ULink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/logo.png" class="h-12" alt="iPets Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap">iPets</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap ">iPets</span>
         </ULink>
       </div>
       <!-- <div class="flex lg:hidden">

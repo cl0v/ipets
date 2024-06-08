@@ -38,6 +38,50 @@
         "description": "Protegendo"
     },
     {
+        "uuid": "cavalier_king_charles_spaniel",
+        "name": "Cavalier King Charles Spaniel",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Cavalier King Charles Spaniel",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4.5,
+            "totalCount": 89
+        },
+        "colors": [
+            {
+                "name": "Blenheim",
+                "class": "bg-yellow-700",
+                "selectedClass": "bg-zinc-100",
+                "query": "blenheim"
+            },
+            {
+                "name": "Pretro",
+                "class": "bg-black",
+                "selectedClass": "bg-zinc-100",
+                "query": "black"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Único",
+                "inStock": true,
+                "query": "default"
+            }
+        ],
+        "description": "Os Cavalier King Charles Spaniels são conhecidos por seu temperamento dócil e afetuoso. Eles são excelentes companheiros, adoram estar perto das pessoas e se dão bem com crianças e outros animais de estimação. Sua pelagem sedosa e olhos grandes e expressivos fazem deles uma raça extremamente adorável."
+    },
+    {
         "uuid": "golden_retriever",
         "name": "Golden Retriever",
         "href": "#",

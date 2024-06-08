@@ -24,6 +24,7 @@
     "gender": "Escolha o gênero",
     "size": "Escolha o tamanho",
     "layout": {
+      "picture": "Envie uma imagem do filhote que deseja, que te enviaremos um igual!",
       "details": "Detalhes",
       "specs": "Especificações",
       "description": "Descrição",

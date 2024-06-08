@@ -8,9 +8,5 @@
   <div class=" flex items-center justify-center">
 
     <h1>Pagamento bem sucedido, você será redirecionado para o WhatsApp!</h1>
-  </div>
+  </div>2
 </template>
-
-<script lang="ts" setup>
-
-</script>
