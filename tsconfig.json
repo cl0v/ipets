@@ -9,8 +9,7 @@
     "allowJs": true,
     "types": [
       "@nuxt/types",
-      "@types/node",
-      "@nuxtjs/sentry"
+      "@types/node"
     ]
   },
   "exclude": [

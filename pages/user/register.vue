@@ -1,6 +1,6 @@
 <template>
-  <div class="flex">
-    <div class="w-1/2">
+  <div class="flex flex-col md:flex-row">
+    <div class="w-full md:w-1/2">
       <form class="max-w-md mx-auto" @submit.prevent="submitForm">
         <div class="mb-4">
           <label for="name" class="block text-gray-700 font-bold mb-2">Nome completo *</label>
@@ -48,7 +48,7 @@
         </UButton>
       </form>
     </div>
-    <div class="w-1/2 bg-gray-100 p-4">
+    <div class="hidden md:block md:w-1/2 bg-gray-100 p-4">
       <h2 class="text-xl font-bold mb-4">{{ $t("register.title") }}</h2>
       <div class="mb-4">
         <p class="text-gray-700 font-bold">{{ $t("register.details") }}</p>
@@ -56,7 +56,7 @@
       </div>
       <div class="mb-4">
         <p class="text-gray-700 font-bold"> {{ $t("register.total") }}</p>
-        <p>{{ details.price }}</p>
+        <p>{{ $t('global.currency') }} {{ details.price }}</p>
       </div>
       <!-- <div class="mb-4">
         <p class="text-gray-700 font-bold">{{ $t("register.description") }}</p>

@@ -5,21 +5,16 @@ import { femalePriceMultiplier } from '../utils/constants'
 import details from '~/assets/jsons/breeds_details.json'
 import availableGenders from "~/assets/jsons/genders.json"
 import priceTable from "~/assets/jsons/price_table.json"
+import { addOrderRef } from '../utils/firebase'
 
 
 export default defineEventHandler(async event => {
-	try {
-
-	}catch {
-	}
 	const runtimeConfig = useRuntimeConfig()
 	const body = await readBody(event)
 
 	const isDev = process.dev
 
-	const userDoc = await firestore.collection(isDev ? 'devUsers' : 'users').add(body)
-
-	const userId = userDoc.id
+	const userId = await addOrderRef(body)
 
 	const preference = new Preference(mercadopago)
 
@@ -71,5 +66,6 @@ export default defineEventHandler(async event => {
 		return { url: response.init_point }
 	}
 
-
 })
+
+

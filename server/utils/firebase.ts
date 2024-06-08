@@ -1,11 +1,18 @@
-import { useFirestore } from 'vuefire'
 import { addDoc, collection} from 'firebase/firestore'
 import firebaseServer from './useFirebaseServer'
+import { useFirestore } from 'vuefire'
 
+// used for the firestore refs
 
+const isDev = process.dev
 
-export const app = initializeApp({
-    credential: cert('./service-account.json'),
-})
+// here we can export reusable database references
 
-export const firestore = getFirestore(app);
+export async function addOrderRef(data: Object): Promise<string> {
+    const db = useFirestore()
+    const ordersRef = collection(db, isDev ? 'dev-orders' : 'orders')
+
+    const userDoc = await addDoc(ordersRef, data)
+
+    return userDoc.id
+}
