@@ -1,34 +1,34 @@
-import { addDoc, collection,  doc , updateDoc} from 'firebase/firestore'
-import firebaseServer from './useFirebaseServer'
+// import { addDoc, collection,  doc , updateDoc} from 'firebase/firestore'
+// import firebaseServer from './useFirebaseServer'
 
-import { useFirestore } from 'vuefire'
+// import { useFirestore } from 'vuefire'
 
-// used for the firestore refs
+// // used for the firestore refs
 
-const isDev = process.dev
+// const isDev = process.dev
 
-const db = useFirestore()
+// const db = useFirestore()
 
-// here we can export reusable database references
+// // here we can export reusable database references
 
-export async function addOrderRef(data: Object): Promise<string> {
-    const ordersRef = collection(db, isDev ? 'dev-orders' : 'orders')
+// export async function addOrderRef(data: Object): Promise<string> {
+//     const ordersRef = collection(db, isDev ? 'dev-orders' : 'orders')
 
-    const userDoc = await addDoc(ordersRef, data)
+//     const userDoc = await addDoc(ordersRef, data)
 
-    return userDoc.id
-}
+//     return userDoc.id
+// }
 
-export async function linkOrderToPayment(orderId: string, status?: string, paymentId?: number,): Promise<string> {
-    if (!orderId) {
-        throw new Error('Missing orderId')
-    }
-    const orderDoc = doc(db, isDev ? 'dev-orders' : 'orders', orderId)
+// export async function linkOrderToPayment(orderId: string, status?: string, paymentId?: number,): Promise<string> {
+//     if (!orderId) {
+//         throw new Error('Missing orderId')
+//     }
+//     const orderDoc = doc(db, isDev ? 'dev-orders' : 'orders', orderId)
 
-    await updateDoc(orderDoc, {
-        payment_id: paymentId,
-        payment_status: status
-    })
+//     await updateDoc(orderDoc, {
+//         payment_id: paymentId,
+//         payment_status: status
+//     })
 
-    return orderDoc.id
-}
+//     return orderDoc.id
+// }

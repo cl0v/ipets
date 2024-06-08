@@ -5,7 +5,6 @@ import { femalePriceMultiplier } from '../utils/constants'
 import details from '~/assets/jsons/breeds_details.json'
 import availableGenders from "~/assets/jsons/genders.json"
 import priceTable from "~/assets/jsons/price_table.json"
-import { addOrderRef } from '../utils/firebase'
 
 
 export default defineEventHandler(async event => {

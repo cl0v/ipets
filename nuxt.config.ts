@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
-    "nuxt-vuefire"
   ],
   content: {},
   colorMode: {
