@@ -43,7 +43,7 @@
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required>
         </div>
-        <UButton type="submit" :loading="pending" block size="xl" icon="i-mdi-credit-card">
+        <UButton type="submit" style="color: white" :loading="pending" block size="xl" icon="i-mdi-credit-card">
           Continuar para pagamento
         </UButton>
       </form>

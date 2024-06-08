@@ -186,8 +186,8 @@
         ],
         "sizes": [
             {
-                "name": "Único",
-                "inStock": true,
+                "name": "Padrão",
+                "inStock": false,
                 "query": "default"
             }
         ],
@@ -224,9 +224,9 @@
         ],
         "sizes": [
             {
-                "name": "Pequeno",
-                "inStock": true,
-                "query": "small"
+                "name": "Padrão",
+                "inStock": false,
+                "query": "default"
             }
         ],
         "description": "Os Malteses são conhecidos por seu pelo branco e sedoso e sua natureza carinhosa. Eles são ideais para quem procura um cão de companhia leal e afetuoso. Esta raça é especialmente adequada para quem vive em apartamentos devido ao seu tamanho compacto."
@@ -262,21 +262,16 @@
         ],
         "sizes": [
             {
-                "name": "Médio",
-                "inStock": true,
-                "query": "medium"
-            },
-            {
-                "name": "Grande",
-                "inStock": true,
-                "query": "large"
+                "name": "Padrão",
+                "inStock": false,
+                "query": "default"
             }
         ],
         "description": "Os Rottweilers são cães robustos e leais, conhecidos por sua força e inteligência. Eles são excelentes cães de guarda e companheiros leais, sendo ótimos para famílias que buscam um cão protetor e carinhoso."
     },
     {
         "uuid": "shihtzu",
-        "name": "Shih Tzu",
+        "name": "Shih-Tzu",
         "href": "#",
         "breadcrumbs": [
             {
@@ -286,7 +281,7 @@
             },
             {
                 "id": 2,
-                "name": "Shih Tzu",
+                "name": "Shih-Tzu",
                 "href": "#"
             }
         ],
@@ -319,25 +314,13 @@
                 "class": "bg-gray-400",
                 "selectedClass": "bg-zinc-100",
                 "query": "gray"
-            },
-            {
-                "name": "Branco e Preto",
-                "class": "bg-gradient-to-r from-white to-black",
-                "selectedClass": "bg-zinc-100",
-                "query": "white_and_black"
-            },
-            {
-                "name": "Branco e Dourado",
-                "class": "bg-gradient-to-r from-white to-amber-600",
-                "selectedClass": "bg-zinc-100",
-                "query": "white_and_gold"
             }
         ],
         "sizes": [
             {
-                "name": "Pequeno",
-                "inStock": true,
-                "query": "small"
+                "name": "Padrão",
+                "inStock": false,
+                "query": "default"
             }
         ],
         "description": "Os Shih Tzus são cães pequenos e encantadores, conhecidos por seu pelo longo e luxuoso e sua natureza amigável. Eles são ótimos companheiros e são ideais para famílias que buscam um cão de companhia afetuoso e brincalhão."

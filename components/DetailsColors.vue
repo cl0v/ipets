@@ -6,7 +6,7 @@
         <RadioGroupOption as="template" v-for="color in availableColors" :key="color.query" :value="color"
           v-slot="{ active, checked }">
           <div
-            :class="['bg-zinc-100', active && checked ? 'ring ring-offset-1' : '', !active && checked ? 'ring-2' : '', 'relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none']">
+            :class="[active && checked ? 'ring ring-offset-1' : '', !active && checked ? 'ring-2' : '', 'relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none']">
             <RadioGroupLabel as="span" class="sr-only">{{ color.name }}</RadioGroupLabel>
 
             <span aria-hidden="true"

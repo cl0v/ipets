@@ -16,12 +16,12 @@
     {
         "name": "Rottweiler",
         "uuid": "rottweiler",
-        "price": 1800,
+        "price": 2100,
         "imageUrl": "/images/dogs/rottweiler.jpg",
         "imageAlt": "Um forte Rottweiler."
     },
     {
-        "name": "Shih Tzu",
+        "name": "Shih-Tzu",
         "uuid": "shihtzu",
         "price": 8000,
         "imageUrl": "/images/dogs/shih_tzu.jpg",

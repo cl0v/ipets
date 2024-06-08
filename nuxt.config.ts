@@ -8,12 +8,15 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
   ],
+  css: [
+    '~/assets/css/tailwind.css',
+  ],
+  ui:{
+    global: true,
+  },
   content: {},
   colorMode: {
     preference: 'light'
-  },
-  nitro: {
-    plugins: ['pluguins/firebase.ts']
   },
   runtimeConfig: {
     mercadopagoWebhookSecret: process.env.NUXT_MERCADOPAGO_WEBHOOK_SECRET,

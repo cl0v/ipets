@@ -103,5 +103,17 @@
             "/images/dogs/akita.webp",
             "/images/dogs/akita.webp"
         ]
+    },
+    {
+        "uuid": "rottweiler",
+        "color": "black",
+        "size": "default",
+        "price": 2800,
+        "images": [
+            "https://i.pinimg.com/474x/0d/86/a4/0d86a465b528fe32f2663766f4a92457.jpg",
+            "https://www.patasdacasa.com.br/sites/patasdacasa/files/rottweiler-filhote7.jpg",
+            "https://www.oliberal.com/image/contentid/policy:1.606263:1666994012/Rottweiler-filhote-pixabay.png?f=3x2&q=1.0&w=700&$p$f$q$w=5494a74",
+            "/images/dogs/rottweiler.jpg"
+        ]
     }
 ]
