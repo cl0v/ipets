@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
+    'nuxt-og-image'
   ],
   css: [
     '~/assets/css/tailwind.css',
@@ -34,6 +35,9 @@ export default defineNuxtConfig({
     head: {
       title: 'iPets - Filhotes disponíveis',
       charset: 'utf-8',
+      htmlAttrs: {
+        lang: 'pt_BR'
+      },
       meta: [
         { name: 'description', content: 'Compre seu filhote de forma segura.' }
       ],
