@@ -1,7 +1,6 @@
-rebuild:
+prepare:
 	nuxi prepare
 
-clear:
-	rm -rf .nuxt
+clean: 
+	nuxi cleanup
 	rm -f package-lock.json
-	make rebuild

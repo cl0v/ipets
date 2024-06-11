@@ -6,24 +6,39 @@
         "imageUrl": "/images/dogs/golden_retriever.heic",
         "imageAlt": "Um amigável Golden Retriever."
     },
+   
+    {
+        "name": "Dachshund (Salsicha)",
+        "uuid": "dachshund",
+        "price": 5000,
+        "imageUrl": "images/dogs/dachshund.jpg",
+        "imageAlt": "Um pequeno Dachshund Miniatura."
+    },
     {
         "name": "Maltês",
         "uuid": "maltes",
-        "price": 8000,
+        "price": 3400,
         "imageUrl": "/images/dogs/maltes.webp",
         "imageAlt": "Um fofo Maltês."
     },
     {
+        "name": "Cavalier King Charles Spaniel",
+        "uuid": "cavalier_king_charles_spaniel",
+        "price": 24800,
+        "imageUrl": "images/dogs/cavalier_king_charles_spaniel.jpg",
+        "imageAlt": "Um elegante Cavalier King Charles Spaniel."
+    },
+    {
         "name": "Rottweiler",
         "uuid": "rottweiler",
-        "price": 2100,
+        "price": 2150,
         "imageUrl": "/images/dogs/rottweiler.jpg",
         "imageAlt": "Um forte Rottweiler."
     },
     {
         "name": "Shih-Tzu",
         "uuid": "shihtzu",
-        "price": 8000,
+        "price": 3100,
         "imageUrl": "/images/dogs/shih_tzu.jpg",
         "imageAlt": "Um adorável Shih Tzu."
     }

@@ -87,6 +87,9 @@
             <div class="mt-4">
               <ul role="list" class="list-disc space-y-1 pl-4 text-sm">
                 <li class="text-gray-400">
+                  <span class="text-gray-600"> {{ $t('details.layout.picture') }} </span>
+                </li>
+                <li class="text-gray-400">
                   <span class="text-gray-600"> {{ $t('details.layout.pedigree') }} </span>
                 </li>
                 <li class="text-gray-400">
@@ -122,6 +125,7 @@
 import { encodeToken } from '~/utils/jwtEncode';
 import genders from "~/assets/jsons/genders.json"
 import usePetPrice from '~/composables/priceState';
+import usePetImages from '~/composables/imagesState';
 
 const { breed } = useRoute().params
 
@@ -134,7 +138,6 @@ const pet = details.value!
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
 useFetchPriceNImages()
-
 
 const submitForm = () => {
 

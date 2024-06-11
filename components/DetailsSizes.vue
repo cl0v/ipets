@@ -60,7 +60,7 @@ function updateSize(newSize: PetSizeType) {
 
   updateQueryStringParameter('size', newSize.query)
 
-  useFetchPriceNImages()
+  // useFetchPriceNImages()
 
 }
 </script>

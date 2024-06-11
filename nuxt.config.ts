@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   // debug: true,
-  devtools: { enabled: true }, // Desativar em produção
+  // devtools: { enabled: true }, // Desativar em produção
   modules: [
     "@nuxt/ui",
     '@nuxt/image',

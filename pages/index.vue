@@ -3,7 +3,7 @@ const { data } = await useFetch('/api/gallery')
 
 const pets = data.value?.pets;
 
-pets?.sort((a, b) => a.name.toUpperCase().localeCompare(b.name.toUpperCase()))
+// pets?.sort((a, b) => a.name.toUpperCase().localeCompare(b.name.toUpperCase()))
 </script>
 
 <template>

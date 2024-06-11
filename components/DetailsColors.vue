@@ -43,7 +43,6 @@ function updateColor(newColor: PetColorType) {
   selectedColor.value = newColor
 
   updateQueryStringParameter('color', newColor.query);
-  useFetchPriceNImages()
-
+  // useFetchPriceNImages()
 }
 </script>

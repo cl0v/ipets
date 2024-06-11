@@ -38,6 +38,100 @@
         "description": "Protegendo"
     },
     {
+        "uuid": "cavalier_king_charles_spaniel",
+        "name": "Cavalier King Charles Spaniel",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Cavalier King Charles Spaniel",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4.5,
+            "totalCount": 89
+        },
+        "colors": [
+            {
+                "name": "Blenheim",
+                "class": "bg-yellow-700",
+                "selectedClass": "bg-zinc-100",
+                "query": "blenheim"
+            },
+            {
+                "name": "Pretro",
+                "class": "bg-black",
+                "selectedClass": "bg-zinc-100",
+                "query": "black"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Único",
+                "inStock": true,
+                "query": "default"
+            }
+        ],
+        "description": "Os Cavalier King Charles Spaniels são conhecidos por seu temperamento dócil e afetuoso. Eles são excelentes companheiros, adoram estar perto das pessoas e se dão bem com crianças e outros animais de estimação. Sua pelagem sedosa e olhos grandes e expressivos fazem deles uma raça extremamente adorável."
+    },
+    {
+        "uuid": "dachshund",
+        "name": "Dachshund",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Dachshund",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4.7,
+            "totalCount": 132
+        },
+        "colors": [
+            {
+                "name": "Creme",
+                "class": "bg-orange-100",
+                "selectedClass": "bg-zinc-100",
+                "query": "cream"
+            },
+            {
+                "name": "Preto",
+                "class": "bg-black",
+                "selectedClass": "bg-zinc-100",
+                "query": "black"
+            },
+            {
+                "name": "Marrom",
+                "class": "bg-yellow-700",
+                "selectedClass": "bg-zinc-100",
+                "query": "brown"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Miniatura",
+                "inStock": false,
+                "query": "miniature"
+            }
+        ],
+        "description": "Os Dachshunds, também conhecidos como cães salsicha, são conhecidos por sua personalidade corajosa e amigável. Eles são ótimos companheiros e se adaptam bem a diferentes ambientes, sejam eles urbanos ou rurais. Sua aparência única e carisma tornam essa raça muito popular.\nTemos disponíveis as variantes Pelo Longo ou Pelo curto (25% de cash-back)."
+    },
+    {
         "uuid": "golden_retriever",
         "name": "Golden Retriever",
         "href": "#",

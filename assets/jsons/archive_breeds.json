@@ -27,13 +27,7 @@
         "imageUrl": "/images/dogs/spitz_alemao.webp",
         "imageAlt": "Lulu da Pomerânia."
     },
-    {
-        "name": "Dachshund (Salsicha)",
-        "uuid": "dachshund",
-        "price": 6500,
-        "imageUrl": "images/dogs/dachshund.jpg",
-        "imageAlt": "Um pequeno Dachshund Miniatura."
-    },
+    
     {
         "name": "Akita Inu",
         "uuid": "akita_inu",
@@ -153,13 +147,7 @@
         "imageUrl": "images/dogs/bull_terrier.jpg",
         "imageAlt": "Um divertido Bull Terrier."
     },
-    {
-        "name": "Cavalier King Charles Spaniel",
-        "uuid": "cavalier_king_charles_spaniel",
-        "price": 193000,
-        "imageUrl": "images/dogs/cavalier_king_charles_spaniel.jpg",
-        "imageAlt": "Um elegante Cavalier King Charles Spaniel."
-    },
+    
     {
         "name": "Fila Brasileiro",
         "uuid": "fila_brasileiro",

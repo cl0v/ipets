@@ -51,6 +51,6 @@ const selectedGender = ref(maybeGender ?? availableGenders[0])
 function updateGender(newGender) {
   selectedGender.value = newGender
   updateQueryStringParameter('gender', newGender.query)
-  useFetchPriceNImages()
+  // useFetchPriceNImages()
 }
 </script>
