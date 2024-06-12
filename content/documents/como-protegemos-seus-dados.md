@@ -1,4 +1,6 @@
-﻿<!-- Saiba como mantemos seus dados seguros na iPets. -->
+﻿
+
+<!-- Saiba como mantemos seus dados seguros na iPets. -->
 
 **POLÍTICA DE PRIVACIDADE DO SITE E POLÍTICA GERAL DE PROTEÇÃO DE DADOS – DREAMPUPPY IPETS**
 
