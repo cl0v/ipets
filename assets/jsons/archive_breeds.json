@@ -1,5 +1,13 @@
 [
     {
+        "name": "Cane Corso",
+        "uuid": "cane_corso",
+        "price": 2800,
+        "imageUrl": "images/dogs/cane_corso.jpg",
+        "imageAlt": "Um bravo Cane Corso."
+        
+    },
+    {
         "name": "Husky Siberiano",
         "uuid": "husky_siberiano",
         "price": 12000,

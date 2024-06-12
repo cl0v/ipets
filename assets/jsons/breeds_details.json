@@ -418,5 +418,62 @@
             }
         ],
         "description": "Os Shih Tzus são cães pequenos e encantadores, conhecidos por seu pelo longo e luxuoso e sua natureza amigável. Eles são ótimos companheiros e são ideais para famílias que buscam um cão de companhia afetuoso e brincalhão."
-    }
+    },[
+        {
+            "uuid": "cane_corso",
+            "name": "Cane Corso",
+            "href": "#",
+            "breadcrumbs": [
+                {
+                    "id": 1,
+                    "name": "Cachorros",
+                    "href": "#"
+                },
+                {
+                    "id": 2,
+                    "name": "Cane Corso",
+                    "href": "#"
+                }
+            ],
+            "reviews": {
+                "href": "#",
+                "average": 4.8,
+                "totalCount": 150
+            },
+            "colors": [
+                {
+                    "name": "Preto",
+                    "class": "bg-black",
+                    "selectedClass": "bg-zinc-100",
+                    "query": "black"
+                },
+                {
+                    "name": "Cinza",
+                    "class": "bg-gray-500",
+                    "selectedClass": "bg-zinc-100",
+                    "query": "gray"
+                },
+                {
+                    "name": "Fulvo",
+                    "class": "bg-yellow-600",
+                    "selectedClass": "bg-zinc-100",
+                    "query": "fawn"
+                },
+                {
+                    "name": "Tigrado",
+                    "class": "bg-gradient-to-r from-black to-gray-600",
+                    "selectedClass": "bg-zinc-100",
+                    "query": "brindle"
+                }
+            ],
+            "sizes": [
+                {
+                    "name": "Único",
+                    "inStock": true,
+                    "query": "default"
+                }
+            ],
+            "description": "Os Cane Corsos são conhecidos por sua força e lealdade. Eles são excelentes cães de guarda e têm uma natureza protetora. Com treinamento adequado, eles são companheiros gentis e afetuosos. Sua aparência imponente e musculosa é equilibrada por um comportamento calmo e confiante."
+        }
+    ]
 ]

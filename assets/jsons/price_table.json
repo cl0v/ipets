@@ -10,6 +10,13 @@
         ]
     },
     {
+        "uuid": "cane_corso",
+        "price": 2800,
+        "images": [
+            "https://i.pinimg.com/474x/0d/86/a4/0d86a465b528fe32f2663766f4a92457.jpg"
+        ]
+    },
+    {
         "uuid": "dachshund",
         "price": 5000,
         "images": [
