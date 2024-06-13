@@ -32,8 +32,7 @@ useHead(computedPageMeta)
 
 defineOgImageComponent('NuxtSeo', {
   headline: 'Conheça o ' + pet.name,
-  // alt: `Filhote de ${breed}`, 
-  url: pet.image,
+  image: pet.image,
   title: pet.name,
   description: 'Conheça o ' + pet.name,
   theme: '#000000',
