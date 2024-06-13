@@ -17,6 +17,19 @@ await useFetchPriceNImages()
 
 // console.log(usePetImages.value)
 
+const computedPageMeta = computed(()=> {
+  return {
+    title: 'Conheça o ' + pet.name,
+    meta: [
+      { hid: 'og-title', property: 'og:title', content: 'Filhote de ' + pet.name },
+      { hid: 'og-description', property: 'og:description', content: 'Conheça o ' + pet.name },
+      { hid: 'og-image', property: 'og:image', content: pet.image },
+    ]
+  }
+})
+
+useHead(computedPageMeta)
+
 defineOgImageComponent('NuxtSeo', {
   headline: 'Conheça o ' + pet.name,
   // alt: `Filhote de ${breed}`, 
