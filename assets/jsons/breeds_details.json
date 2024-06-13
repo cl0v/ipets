@@ -2,6 +2,7 @@
     {
         "uuid": "cerberus",
         "name": "Cerberus",
+        "image": "/images/dogs/cerberus.jpg",
         "href": "#",
         "breadcrumbs": [
             {
@@ -40,6 +41,7 @@
     {
         "uuid": "cavalier_king_charles_spaniel",
         "name": "Cavalier King Charles Spaniel",
+        "image": "images/dogs/cavalier_king_charles_spaniel.jpg",
         "href": "#",
         "breadcrumbs": [
             {
@@ -84,6 +86,7 @@
     {
         "uuid": "dachshund",
         "name": "Dachshund",
+        "image": "images/dogs/dachshund.jpg",
         "href": "#",
         "breadcrumbs": [
             {
@@ -135,6 +138,7 @@
         "uuid": "golden_retriever",
         "name": "Golden Retriever",
         "href": "#",
+        "image": "/images/dogs/golden_retriever.heic",
         "breadcrumbs": [
             {
                 "id": 1,
@@ -291,6 +295,7 @@
         "uuid": "maltes",
         "name": "Maltês",
         "href": "#",
+        "image": "/images/dogs/maltes.webp",
         "breadcrumbs": [
             {
                 "id": 1,
@@ -328,6 +333,7 @@
     {
         "uuid": "rottweiler",
         "name": "Rottweiler",
+        "image": "/images/dogs/rottweiler.jpg",
         "href": "#",
         "breadcrumbs": [
             {
@@ -366,6 +372,7 @@
     {
         "uuid": "shihtzu",
         "name": "Shih-Tzu",
+        "image": "/images/dogs/shih_tzu.jpg",
         "href": "#",
         "breadcrumbs": [
             {

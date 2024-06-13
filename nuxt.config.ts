@@ -1,14 +1,19 @@
 export default defineNuxtConfig({
   // debug: true,
-  // devtools: { enabled: true }, // Desativar em produção
+  devtools: { enabled: true }, // Desativar em produção
   modules: [
     "@nuxt/ui",
     '@nuxt/image',
     "@nuxt/content",
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
-    'nuxt-og-image'
+    "@nuxtjs/seo"
   ],
+  site: {
+    url: 'https://ipets.dreampuppy.com.br',
+    name: 'iPets',
+    description: 'Compre seu filhote de forma segura!',
+  },
   css: [
     '~/assets/css/tailwind.css',
   ],
@@ -30,7 +35,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'iPets - Filhotes disponíveis',
+      // title: 'iPets - Filhotes disponíveis',
       charset: 'utf-8',
       htmlAttrs: {
         lang: 'pt_BR'

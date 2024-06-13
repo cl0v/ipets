@@ -15,14 +15,15 @@
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.16.0",
     "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/seo": "^2.0.0-rc.10",
     "@nuxtjs/tailwindcss": "^6.12.0",
-    "tailwindcss": "^3.4.4",
     "@vercel/postgres": "^0.8.0",
     "criptoya": "^1.0.0",
     "jwt-decode": "^4.0.0",
     "jwt-encode": "^1.0.1",
     "mercadopago": "^2.0.9",
     "nuxt": "^3.11.2",
+    "tailwindcss": "^3.4.4",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
@@ -32,5 +33,6 @@
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.18.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

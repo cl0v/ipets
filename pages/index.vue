@@ -1,4 +1,14 @@
 <script setup lang="ts">
+defineOgImageComponent('NuxtSeo', {
+  headline: 'Boas vindas ao iPets',
+  alt: 'Logo da iPets',
+  url: '/logo.png',
+  title: 'Filhotes disponíveis',
+  description: 'Compre seu filhote de forma segura!',
+  theme: '#000000',
+  colorMode: 'light',
+})
+
 const { data } = await useFetch('/api/gallery')
 
 const pets = data.value?.pets;

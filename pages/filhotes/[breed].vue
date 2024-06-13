@@ -1,3 +1,82 @@
+<script setup lang="ts">
+
+
+import { encodeToken } from '~/utils/jwtEncode';
+import genders from "~/assets/jsons/genders.json"
+import usePetPrice from '~/composables/priceState';
+
+const { breed } = useRoute().params
+
+const { data: details, error } = await useFetch('/api/details', {
+  query: { breed: breed }
+})
+
+const pet = details.value!
+
+await useFetchPriceNImages()
+
+// console.log(usePetImages.value)
+
+defineOgImageComponent('NuxtSeo', {
+  headline: 'Conheça o ' + pet.name,
+  // alt: `Filhote de ${breed}`, 
+  url: pet.image,
+  title: pet.name,
+  description: 'Conheça o ' + pet.name,
+  theme: '#000000',
+  colorMode: 'light',
+})
+// const reviews = { href: '#', average: 4, totalCount: 117 }
+
+
+const submitForm = () => {
+
+  const secret = 'user-preferences';
+
+  const { breed } = useRoute().params
+
+  let url = new URL(window.location.href);
+
+  // Atualiza o parâmetro de consulta
+  const color = url.searchParams.get('color');
+  const gender = url.searchParams.get('gender');
+  const size = url.searchParams.get('size');
+
+  const colorName = (pet.colors.find((e) => e.query == color?.toString()) ?? pet.colors[0]).name
+  const genderName = (genders.find((e) => e.query == gender?.toString()) ?? genders[0]).name
+  const sizeName = (pet.sizes.find((e) => e.query == size?.toString()) ?? pet.sizes[0]).name
+
+  const { petPrice } = usePetPrice()
+
+  const data = {
+    breed: pet.name,
+    qBreed: breed,
+    color: colorName,
+    qColor: color,
+    gender: genderName,
+    qGender: gender,
+    size: sizeName,
+    qSize: size,
+    price: petPrice.value
+  };
+
+  const jwt = encodeToken(data, secret);
+
+  navigateTo(`/user/register?intent=${jwt}`);
+  // return `/user/register?intent=${jwt}`
+  // Redireciona para o user-register
+  // Envia um JWT contendo as preferencias selecionadas pelo usuario
+
+}
+
+</script>
+
+<style>
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+</style>
 <template>
 
   <Head>
@@ -120,70 +199,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { encodeToken } from '~/utils/jwtEncode';
-import genders from "~/assets/jsons/genders.json"
-import usePetPrice from '~/composables/priceState';
-import usePetImages from '~/composables/imagesState';
-
-const { breed } = useRoute().params
-
-const { data: details, error } = await useFetch('/api/details', {
-  query: { breed: breed }
-})
-
-const pet = details.value!
-
-const reviews = { href: '#', average: 4, totalCount: 117 }
-
-useFetchPriceNImages()
-
-const submitForm = () => {
-
-  const secret = 'user-preferences';
-
-  const { breed } = useRoute().params
-
-  let url = new URL(window.location.href);
-
-  // Atualiza o parâmetro de consulta
-  const color = url.searchParams.get('color');
-  const gender = url.searchParams.get('gender');
-  const size = url.searchParams.get('size');
-
-  const colorName = (pet.colors.find((e) => e.query == color?.toString()) ?? pet.colors[0]).name
-  const genderName = (genders.find((e) => e.query == gender?.toString()) ?? genders[0]).name
-  const sizeName = (pet.sizes.find((e) => e.query == size?.toString()) ?? pet.sizes[0]).name
-
-  const { petPrice } = usePetPrice()
-
-  const data = {
-    breed: pet.name,
-    qBreed: breed,
-    color: colorName,
-    qColor: color,
-    gender: genderName,
-    qGender: gender,
-    size: sizeName,
-    qSize: size,
-    price: petPrice.value
-  };
-
-  const jwt = encodeToken(data, secret);
-
-  navigateTo(`/user/register?intent=${jwt}`);
-  // return `/user/register?intent=${jwt}`
-  // Redireciona para o user-register
-  // Envia um JWT contendo as preferencias selecionadas pelo usuario
-
-}
-
-</script>
-
-<style>
-a.disabled {
-  pointer-events: none;
-  cursor: default;
-}
-</style>
