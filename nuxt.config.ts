@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/seo"
+    "@nuxtjs/seo",
+    // '@nuxtjs/eslint-module',
   ],
   site: {
     url: 'https://ipets.dreampuppy.com.br',

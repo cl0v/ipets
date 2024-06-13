@@ -31,10 +31,10 @@ const computedPageMeta = computed(()=> {
 useHead(computedPageMeta)
 
 defineOgImageComponent('NuxtSeo', {
-  headline: 'Conheça o ' + pet.name,
+  headline: 'Compre um ' + pet.name,
   image: pet.image,
   title: pet.name,
-  description: 'Conheça o ' + pet.name,
+  description: 'Compre um ' + pet.name,
   theme: '#000000',
   colorMode: 'light',
 })
