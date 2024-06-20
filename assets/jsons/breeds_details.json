@@ -370,6 +370,63 @@
         "description": "Os Rottweilers são cães robustos e leais, conhecidos por sua força e inteligência. Eles são excelentes cães de guarda e companheiros leais, sendo ótimos para famílias que buscam um cão protetor e carinhoso."
     },
     {
+        "uuid": "chow_chow",
+        "name": "Chow Chow",
+        "image": "/images/dogs/chow_chow.jpg",
+        "href": "#",
+        "breadcrumbs": [
+            {
+                "id": 1,
+                "name": "Cachorros",
+                "href": "#"
+            },
+            {
+                "id": 2,
+                "name": "Chow Chow",
+                "href": "#"
+            }
+        ],
+        "reviews": {
+            "href": "#",
+            "average": 4.7,
+            "totalCount": 200
+        },
+        "colors": [
+            {
+                "name": "Branco",
+                "class": "bg-white",
+                "selectedClass": "bg-zinc-100",
+                "query": "white"
+            },
+            {
+                "name": "Creme",
+                "class": "bg-orange-300",
+                "selectedClass": "bg-zinc-100",
+                "query": "cream"
+            },
+            {
+                "name": "Caramelo",
+                "class": "bg-yellow-700",
+                "selectedClass": "bg-zinc-100",
+                "query": "caramel"
+            },
+            {
+                "name": "Preto",
+                "class": "bg-black",
+                "selectedClass": "bg-zinc-100",
+                "query": "black"
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Padrão",
+                "inStock": false,
+                "query": "default"
+            }
+        ],
+        "description": "Os filhotes de Chow Chow são pequenos fofinhos irresistíveis com suas pelagens densas e línguas azul-escuras. Parecendo pequenos leões, esses filhotes são tão adoráveis quanto dignos. Eles são conhecidos por sua lealdade e natureza protetora, mas também podem ser um pouco reservados com estranhos. Com uma socialização e treinamento amorosos desde cedo, esses peludinhos se tornam companheiros maravilhosos e afetuosos, prontos para encher sua casa de carinho e momentos inesquecíveis."
+    },
+    {
         "uuid": "shihtzu",
         "name": "Shih-Tzu",
         "image": "/images/dogs/shih_tzu.jpg",
@@ -425,7 +482,8 @@
             }
         ],
         "description": "Os Shih Tzus são cães pequenos e encantadores, conhecidos por seu pelo longo e luxuoso e sua natureza amigável. Eles são ótimos companheiros e são ideais para famílias que buscam um cão de companhia afetuoso e brincalhão."
-    },[
+    },
+    [
         {
             "uuid": "cane_corso",
             "name": "Cane Corso",

@@ -6,7 +6,13 @@
         "imageUrl": "/images/dogs/golden_retriever.heic",
         "imageAlt": "Um amigável Golden Retriever."
     },
-   
+    {
+        "name": "Chow Chow",
+        "uuid": "chow_chow",
+        "price": 4200,
+        "imageUrl": "/images/dogs/chow_chow.jpg",
+        "imageAlt": "Os Chow Chow mais fofos que você verá hoje."
+    },
     {
         "name": "Dachshund (Salsicha)",
         "uuid": "dachshund",
@@ -21,6 +27,7 @@
         "imageUrl": "/images/dogs/maltes.webp",
         "imageAlt": "Um fofo Maltês."
     },
+    
     {
         "name": "Cavalier King Charles Spaniel",
         "uuid": "cavalier_king_charles_spaniel",

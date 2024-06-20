@@ -27,7 +27,8 @@ const pets = data.value?.pets;
               class="h-full w-full object-cover object-center group-hover:opacity-75" />
           </div>
           <h3 class="mt-4 text-sm text-gray-700">{{ pet.name }}</h3>
-          <p class="mt-1 text-lg font-medium text-gray-900">{{ $t('global.currency') + pet.price }}</p>
+          <p class="mt-1 text-lg font-medium text-gray-900">{{ $t('gallery.startsAt') + ' ' + $t('global.currency') +
+            pet.price }}</p>
         </a>
       </div>
     </div>

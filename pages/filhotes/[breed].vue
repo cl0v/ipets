@@ -13,10 +13,6 @@ const { data: details, error } = await useFetch('/api/details', {
 
 const pet = details.value!
 
-await useFetchPriceNImages()
-
-// console.log(usePetImages.value)
-
 const computedPageMeta = computed(()=> {
   return {
     title: 'Conheça o ' + pet.name,
@@ -30,6 +26,11 @@ const computedPageMeta = computed(()=> {
 
 useHead(computedPageMeta)
 
+await useFetchPriceNImages()
+
+// console.log(usePetImages.value)
+
+/*
 defineOgImageComponent('NuxtSeo', {
   headline: 'Compre um ' + pet.name,
   image: pet.image,
@@ -38,8 +39,7 @@ defineOgImageComponent('NuxtSeo', {
   theme: '#000000',
   colorMode: 'light',
 })
-// const reviews = { href: '#', average: 4, totalCount: 117 }
-
+*/
 
 const submitForm = () => {
 

@@ -1,5 +1,12 @@
 [
     {
+        "name": "PitMonster",
+        "uuid": "pitmonster",
+        "price": 3000,
+        "imageUrl": "/images/dogs/pitmonster.webp",
+        "imageAlt": "Um amigável PitMonster."
+    },
+    {
         "name": "Cane Corso",
         "uuid": "cane_corso",
         "price": 2800,

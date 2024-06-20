@@ -1,4 +1,7 @@
 {
+  "gallery": {
+    "startsAt" : "A partir de"
+  },
   "global": {
     "currency": "R$",
     "currencyCode": "BRL"
