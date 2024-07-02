@@ -11,20 +11,20 @@ const { data: details, error } = await useFetch('/api/details', {
   query: { breed: breed }
 })
 
-const pet = details.value!
+const pet = details.value
 
-const computedPageMeta = computed(()=> {
-  return {
-    title: 'Conheça o ' + pet.name,
-    meta: [
-      { hid: 'og-title', property: 'og:title', content: 'Filhote de ' + pet.name },
-      { hid: 'og-description', property: 'og:description', content: 'Conheça o ' + pet.name },
-      { hid: 'og-image', property: 'og:image', content: pet.image },
-    ]
-  }
-})
+// const computedPageMeta = computed(()=> {
+//   return {
+//     title: 'Conheça o ' + pet.name,
+//     meta: [
+//       { hid: 'og-title', property: 'og:title', content: 'Filhote de ' + pet.name },
+//       { hid: 'og-description', property: 'og:description', content: 'Conheça o ' + pet.name },
+//       { hid: 'og-image', property: 'og:image', content: pet.image },
+//     ]
+//   }
+// })
 
-useHead(computedPageMeta)
+// useHead(computedPageMeta)
 
 await useFetchPriceNImages()
 
@@ -54,14 +54,14 @@ const submitForm = () => {
   const gender = url.searchParams.get('gender');
   const size = url.searchParams.get('size');
 
-  const colorName = (pet.colors.find((e) => e.query == color?.toString()) ?? pet.colors[0]).name
+  const colorName = (pet?.colors.find((e) => e.query == color?.toString()) ?? pet?.colors[0]).name
   const genderName = (genders.find((e) => e.query == gender?.toString()) ?? genders[0]).name
-  const sizeName = (pet.sizes.find((e) => e.query == size?.toString()) ?? pet.sizes[0]).name
+  const sizeName = (pet?.sizes.find((e) => e.query == size?.toString()) ?? pet?.sizes[0]).name
 
   const { petPrice } = usePetPrice()
 
   const data = {
-    breed: pet.name,
+    breed: pet?.name,
     qBreed: breed,
     color: colorName,
     qColor: color,
