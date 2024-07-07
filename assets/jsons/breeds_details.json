@@ -396,13 +396,25 @@
                 "name": "Branco",
                 "class": "bg-white",
                 "selectedClass": "bg-zinc-100",
-                "query": "white"
+                "query": "white",
+                "images": [
+                    "https://i.pinimg.com/736x/49/08/fd/4908fd8300b490f8e2db1f6d1dd93ff4.jpg",
+                    "https://13630656.rocketcdn.me/wp-content/uploads/2020/02/Picture4-1.jpg.webp",
+                    "https://www.oliberal.com/image/contentid/policy:1.577096:1660977200/chow-chow-preto.png?f=3x2&q=1.0&w=700&$p$f$q$w=c6e3879",
+                    "https://www.portaldodog.com.br/wp-content/uploads/2021/06/dog-chow-chow-breed-bright-red-color-sits-fresh-grass_166347-94.jpg"
+                ]
             },
             {
                 "name": "Creme",
                 "class": "bg-orange-300",
                 "selectedClass": "bg-zinc-100",
-                "query": "cream"
+                "query": "cream",
+                "images": [
+                    "https://i.pinimg.com/736x/49/08/fd/4908fd8300b490f8e2db1f6d1dd93ff4.jpg",
+                    "https://13630656.rocketcdn.me/wp-content/uploads/2020/02/Picture4-1.jpg.webp",
+                    "https://www.oliberal.com/image/contentid/policy:1.577096:1660977200/chow-chow-preto.png?f=3x2&q=1.0&w=700&$p$f$q$w=c6e3879",
+                    "https://www.portaldodog.com.br/wp-content/uploads/2021/06/dog-chow-chow-breed-bright-red-color-sits-fresh-grass_166347-94.jpg"
+                ]
             },
             {
                 "name": "Caramelo",

@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/seo",
-    // '@nuxtjs/eslint-module',
+    "vue3-carousel-nuxt",
   ],
   site: {
     url: 'https://ipets.dreampuppy.com.br',
