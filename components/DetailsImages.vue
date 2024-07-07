@@ -42,11 +42,6 @@ const { petImages } = usePetImages();
     padding: 10px;
 }
 
-/* .carousel__prev, */
-/* .carousel__next { */
-/* box-sizing: content-box; */
-/* border: 5px solid white; */
-/* }  */
 </style>
 
 <template>
