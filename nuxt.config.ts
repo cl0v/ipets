@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/seo",
     "vue3-carousel-nuxt",
+    "@nuxt/icon"
   ],
   site: {
     url: 'https://ipets.dreampuppy.com.br',
