@@ -5,7 +5,7 @@ import { sql } from "@vercel/postgres";
 
 import details from '~/assets/jsons/breeds_details.json'
 import availableGenders from "~/assets/jsons/genders.json"
-import priceTable from "~/assets/jsons/price_table.json"
+// import priceTable from "~/assets/jsons/price_table.json"
 
 export default defineEventHandler(async event => {
 	const runtimeConfig = useRuntimeConfig()
@@ -29,7 +29,8 @@ export default defineEventHandler(async event => {
 	const seletedGender = availableGenders.find(gender => gender.query === body.gender) ?? availableGenders[0]
 
 	const title = `${selectedBreed?.name} ${selectedColor?.name} ${seletedGender?.name} ${selectedSize?.name}`
-	let price = priceTable.find(price => price.uuid === body.breed && price.size === selectedSize?.query && price.color === selectedColor?.query)?.price
+	// let price = details.find(pet=> pet.breed ==  )
+	let price = details.find(pet => pet.uuid === body.breed && pet.size === selectedSize?.query && price.color === selectedColor?.query)?.price
 
 	if (seletedGender.query == 'female') {
 		price = (price ?? 0) * femalePriceMultiplier

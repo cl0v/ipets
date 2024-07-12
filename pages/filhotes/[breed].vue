@@ -3,15 +3,15 @@
 
 import { encodeToken } from '~/utils/jwtEncode';
 import genders from "~/assets/jsons/genders.json"
-import usePetPrice from '~/composables/priceState';
+// import usePetPrice from '~/composables/priceState';
 
 const { breed } = useRoute().params
 
-const { data: details, error } = await useFetch('/api/details', {
+const { data , error } = await useFetch('/api/details', {
   query: { breed: breed }
 })
 
-const pet = details.value
+const pet = data.value
 
 // const computedPageMeta = computed(()=> {
 //   return {
@@ -26,7 +26,6 @@ const pet = details.value
 
 // useHead(computedPageMeta)
 
-await useFetchPriceNImages()
 
 // console.log(usePetImages.value)
 
@@ -58,9 +57,8 @@ const submitForm = () => {
   const genderName = (genders.find((e) => e.query == gender?.toString()) ?? genders[0]).name
   const sizeName = (pet?.sizes.find((e) => e.query == size?.toString()) ?? pet?.sizes[0]).name
 
-  const { petPrice } = usePetPrice()
 
-  const data = {
+  const _data = {
     breed: pet?.name,
     qBreed: breed,
     color: colorName,
@@ -69,10 +67,10 @@ const submitForm = () => {
     qGender: gender,
     size: sizeName,
     qSize: size,
-    price: petPrice.value
+    price: pet?.price,
   };
 
-  const jwt = encodeToken(data, secret);
+  const jwt = encodeToken(_data, secret);
 
   navigateTo(`/user/register?intent=${jwt}`);
   // return `/user/register?intent=${jwt}`
@@ -80,6 +78,8 @@ const submitForm = () => {
   // Envia um JWT contendo as preferencias selecionadas pelo usuario
 
 }
+
+console.log(pet)
 
 </script>
 
@@ -116,7 +116,7 @@ a.disabled {
           </li>
         </ol>
       </nav>
-      <DetailsImages />
+      <DetailsImages :petImages="pet.images" />
       <!-- Product info -->
       <div
         class="mx-auto max-w-2xl px-4 pb-4 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-4 lg:pt-16">
@@ -127,7 +127,7 @@ a.disabled {
         <!-- Options -->
         <div class="mt-4 lg:row-span-3 lg:mt-0">
           <h2 class="sr-only">{{ $t('details.layout.info') }}</h2>
-          <DetailsPrice />
+          <DetailsPrice  :petPrice="pet.price"  />
 
 
           <!-- Reviews -->

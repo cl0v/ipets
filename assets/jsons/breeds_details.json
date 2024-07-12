@@ -4,6 +4,13 @@
         "name": "Cerberus",
         "image": "/images/dogs/cerberus.jpg",
         "href": "#",
+        "price": 1,
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/000/059/409/large/cerber.jpg?1399572051",
+            "https://images.hive.blog/0x0/https://files.peakd.com/file/peakd-hive/elevator09/Eos1igaJKipjzi1Hiki7bnyauF7hggQuJ6mXENiPVyAUmRDzNB92UVLh4vwk2pxPCHz.JPG",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkA168RPPr5gsCKBiWrRC-vSiithr8ktLIBw&s",
+            "https://m.media-amazon.com/images/I/61tlpqbOGqS._AC_UF894,1000_QL80_.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -43,6 +50,13 @@
         "name": "Cavalier King Charles Spaniel",
         "image": "images/dogs/cavalier_king_charles_spaniel.jpg",
         "href": "#",
+        "price": 24800,
+        "images": [
+            "https://i.pinimg.com/736x/07/b5/95/07b5953c2c33d9318f2b8b12315d39fa.jpg",
+            "https://blog-static.petlove.com.br/wp-content/uploads/2018/08/cavalier-king-charles-spaniel-filhote.jpg",
+            "https://love.doghero.com.br/wp-content/uploads/2017/02/Galeria-4-Cavalier.jpg",
+            "https://clubedocavalier.com.br/wp-content/uploads/2019/07/IMG-8489.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -88,6 +102,13 @@
         "name": "Dachshund",
         "image": "images/dogs/dachshund.jpg",
         "href": "#",
+        "price": 5000,
+        "images": [
+            "https://www.poochandmutt.co.uk/cdn/shop/articles/download_11.jpg?v=1627313486",
+            "https://www.raisedrightpets.com/wp-content/uploads/2023/04/kojirou-sasaki-DLdDrb2d4F4-unsplash-1-scaled.jpg",
+            "https://cdn.sanity.io/images/4ij0poqn/production/70a269d4f5f3fde35ce383ed5f3e2327aba45b58-1200x700.jpg",
+            "https://www.patasdacasa.com.br/sites/patasdacasa/files/2023-07/cachorro-salsicha1.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -139,6 +160,13 @@
         "name": "Golden Retriever",
         "href": "#",
         "image": "/images/dogs/golden_retriever.heic",
+        "price": 3900,
+        "images": [
+            "/images/dogs/golden_retriever/gold1_0.heic",
+            "/images/dogs/golden_retriever/gold1_1.heic",
+            "/images/dogs/golden_retriever/gold1_2.heic",
+            "/images/dogs/golden_retriever/gold1_3.heic"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -183,6 +211,13 @@
         "uuid": "pug",
         "name": "Pug",
         "href": "#",
+        "price": 2800,
+        "images": [
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg",
+            "/images/dogs/pug.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -239,6 +274,13 @@
         "uuid": "akita_inu",
         "name": "Akita Inu",
         "href": "#",
+        "price": 2800,
+        "images": [
+            "/images/dogs/akita.webp",
+            "/images/dogs/akita.webp",
+            "/images/dogs/akita.webp",
+            "/images/dogs/akita.webp"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -296,6 +338,13 @@
         "name": "Maltês",
         "href": "#",
         "image": "/images/dogs/maltes.webp",
+        "price": 3400,
+        "images": [
+            "https://www.petz.com.br/blog//wp-content/uploads/2023/04/como-cuidar-de-um-cachorro-maltes-2.jpg",
+            "https://queromeufilhote.com.br/wp-content/uploads/2024/05/WhatsApp-Image-2020-09-22-at-17.08.43.jpeg",
+            "https://www.adoropets.com.br/wp-content/uploads/2018/03/maltes.jpg",
+            "https://filhotes.canillc.com.br/imagens/filhote-maltes-micro-a-venda.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -335,6 +384,13 @@
         "name": "Rottweiler",
         "image": "/images/dogs/rottweiler.jpg",
         "href": "#",
+        "price": 2150,
+        "images": [
+            "https://i.pinimg.com/474x/0d/86/a4/0d86a465b528fe32f2663766f4a92457.jpg",
+            "https://www.patasdacasa.com.br/sites/patasdacasa/files/rottweiler-filhote7.jpg",
+            "https://www.oliberal.com/image/contentid/policy:1.606263:1666994012/Rottweiler-filhote-pixabay.png?f=3x2&q=1.0&w=700&$p$f$q$w=5494a74",
+            "/images/dogs/rottweiler.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -374,6 +430,13 @@
         "name": "Chow Chow",
         "image": "/images/dogs/chow_chow.jpg",
         "href": "#",
+        "price": 4200,
+        "images": [
+            "https://i.pinimg.com/736x/49/08/fd/4908fd8300b490f8e2db1f6d1dd93ff4.jpg",
+            "https://13630656.rocketcdn.me/wp-content/uploads/2020/02/Picture4-1.jpg.webp",
+            "https://www.oliberal.com/image/contentid/policy:1.577096:1660977200/chow-chow-preto.png?f=3x2&q=1.0&w=700&$p$f$q$w=c6e3879",
+            "https://www.portaldodog.com.br/wp-content/uploads/2021/06/dog-chow-chow-breed-bright-red-color-sits-fresh-grass_166347-94.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
@@ -443,6 +506,13 @@
         "name": "Shih-Tzu",
         "image": "/images/dogs/shih_tzu.jpg",
         "href": "#",
+        "price": 3100,
+        "images": [
+            "https://images.unsplash.com/photo-1606409696374-ad132c6388ae?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://i.ytimg.com/vi/OdJt61KsqRA/sddefault.jpg",
+            "/images/dogs/shih_tzu.jpg",
+            "https://st3.depositphotos.com/4031919/17673/i/450/depositphotos_176735630-stock-photo-portrait-cute-little-shih-tzu.jpg"
+        ],
         "breadcrumbs": [
             {
                 "id": 1,
